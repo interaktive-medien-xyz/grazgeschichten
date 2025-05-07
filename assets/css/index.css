@@ -404,6 +404,10 @@ header > h1{
   padding: 3rem;
 }
 
+.note-audio{
+  width: 100%;
+}
+
 
 @media screen and (min-width: 60rem) {
   body {

@@ -2,7 +2,7 @@
     <?php $audio = $block->audio()->toFile(); ?>
     <?php if ($audio): ?>
         <figure class="audio-block">
-            <audio controls>
+            <audio class="note-audio" controls>
                 <source src="<?= $audio->url() ?>" type="<?= $audio->mime() ?>">
                 Your browser does not support the audio element.
             </audio>
