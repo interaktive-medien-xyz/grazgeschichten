@@ -33,6 +33,27 @@ columns:
         type: text
       text:
         type: blocks
+        fieldsets:
+          - heading
+          - text
+          - list
+          - image
+          - gallery
+          - video
+          # - code
+          - markdown
+          - type: audio
+            name: Audio
+            icon: audio
+            fields:
+              audio:
+                label: Audio File
+                type: files
+                accept: audio/*
+                multiple: false
+              caption:
+                label: Caption
+                type: text
 
   - width: 1/3
     # This second column holds a fields section with multiple fields

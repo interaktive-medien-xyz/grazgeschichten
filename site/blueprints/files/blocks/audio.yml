@@ -1,0 +1,13 @@
+title: Audio Block
+
+fields:
+  audio:
+    label: Audio File
+    type: files
+    accept: audio/* 
+    multiple: false 
+
+  caption:
+    label: Caption
+    type: text
+    required: false
