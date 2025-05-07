@@ -35,7 +35,20 @@
     <?php if ($page->subheading()->isNotEmpty()): ?>
     <p class="note-subheading"><small><?= $page->subheading()->esc() ?></small></p>
     <?php endif ?>
+
+    <?php if ($page->author()->isNotEmpty()): ?>
+    <?php $authors = $page->author()->toUsers(); ?>
+    <?php if ($authors->count()): ?>
+        <p class="note-author">
+            <small class="author">Von 
+            <?= implode(', ', $authors->pluck('name')) ?>
+            </small>
+        </p>
+    <?php endif ?>
+<?php endif ?>
+
   </header>
+  
   <div class="note text">
     <?= $page->text()->toBlocks() ?>
   </div>
