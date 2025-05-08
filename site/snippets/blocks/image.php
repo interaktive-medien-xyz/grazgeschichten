@@ -16,29 +16,29 @@
 $src = null;
 
 if ($block->location()->value() === 'web') {
-    $alt = $block->alt();
-    $src = $block->src();
+  $alt = $block->alt();
+  $src = $block->src();
 } else if ($image = $block->image()->toFile()) {
-    $alt = $block->alt()->or($image->alt());
-    $src = $image->url();
+  $alt = $block->alt()->or($image->alt());
+  $src = $image->url();
 }
 
 ?>
 <?php if ($src): ?>
-<figure>
-  <?php snippet('image', [
-    'alt'      => $alt,
-    'contain'  => $block->crop()->isFalse(),
-    'lightbox' => $block->link()->isEmpty(),
-    'href'     => $block->link()->or($src),
-    'src'      => $src,
-    'ratio'    => $block->ratio()->or('auto')
-  ]) ?>
+  <figure>
+    <?php snippet('image', [
+      'alt'      => $alt,
+      'contain'  => $block->crop()->isFalse(),
+      'lightbox' => $block->link()->isEmpty(),
+      'href'     => $block->link()->or($src),
+      'src'      => $src,
+      'ratio'    => $block->ratio()->or('auto')
+    ]) ?>
 
-  <?php if ($block->caption()->isNotEmpty()): ?>
-  <figcaption class="img-caption">
-    <?= $block->caption() ?>
-  </figcaption>
-  <?php endif ?>
-</figure>
+    <?php if ($block->caption()->isNotEmpty()): ?>
+      <figcaption class="img-caption">
+        <?= $block->caption() ?>
+      </figcaption>
+    <?php endif ?>
+  </figure>
 <?php endif ?>
