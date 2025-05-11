@@ -2,11 +2,15 @@ Title: Exploring the universe
 
 ----
 
-Text: [{"content":{"level":"h3","text":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."},"id":"ec417333-19ef-44db-acdb-0b5d6d0aaf71","isHidden":false,"type":"heading"},{"content":{"location":"kirby","image":["file://xkPVM7MdXoEn4do6"],"src":"","alt":"Staring at stars","caption":"Staring at stars","link":"","ratio":"16/9","crop":"true"},"id":"_200yrtaus","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>The Big Oxmox</strong> advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic <a href=\"https://getkirby.com\" rel=\"noopener noreferrer nofollow\">Mountains</a>, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</p>"},"id":"_J5cUP6Q8A","isHidden":false,"type":"text"},{"content":{"text":"Time flies like an arrow; fruit flies like a banana","citation":"<a href=\"https://en.wikipedia.org/wiki/Anthony_Oettinger\" rel=\"noopener noreferrer nofollow\">Anthony Oettinger</a>"},"id":"_sxaa7bs0y","isHidden":false,"type":"quote"},{"content":{"level":"h2","text":"Let's put a heading here"},"id":"_mg1sjf8a6","isHidden":false,"type":"heading"},{"content":{"text":"<p>But nothing the <u>copy</u> said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their <em>projects</em> again and again. And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>"},"id":"_1gcmahr5x","isHidden":false,"type":"text"},{"content":{"location":"","url":"https://vimeo.com/54400762","video":[],"poster":[],"caption":"I found this when searching for stars on Vimeo","autoplay":"false","muted":"true","loop":"false","controls":"true","preload":""},"id":"_d5m9sxprv","isHidden":false,"type":"video"},{"content":{"text":"## This is created by some good old markdown\n\nYou can mix it with the other blocks to get even more **flexibility**. Markdown can be <strong>mixed</strong> with HTML too, which is nice. And of course (link: https://getkirby.com text: Kirbytags) are cool too."},"id":"_mxb6p3yof","isHidden":false,"type":"markdown"},{"content":{"text":"<ul><li><p>Look, it's a list</p></li><li><p>With some nice bullet points</p></li><li><p>Here's another one</p><ol><li><p>This is a nested list</p></li><li><p>With even more list items</p></li><li><p>Mixed list types are possible as well</p></li></ol></li></ul>"},"id":"b664b628-4782-4fc5-8b97-8fe6bb57f7fc","isHidden":false,"type":"list"},{"content":{"level":"h2","text":"Stars stars stars"},"id":"_u6rqirt17","isHidden":false,"type":"heading"},{"content":{"text":"<p>Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna <code>mollis</code> euismod. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>"},"id":"_35hdmhopv","isHidden":false,"type":"text"},{"content":{"code":"<?php foreach ($page->text()->toBlocks() as $block): ?>\n<div class=\"block\">\n  <?= $block ?>\n</div>\n<?php endforeach ?>","language":"php"},"id":"_l0ugjspzr","isHidden":false,"type":"code"},{"content":{"level":"h3","text":"Last heading – promised!"},"id":"_9ossz5bvo","isHidden":false,"type":"heading"},{"content":{"text":"<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"},"id":"_uxnakchw6","isHidden":false,"type":"text"}]
+Subheading: Our quest to the edge of nowhere
 
 ----
 
-Cover: - 'file://ocbquxRNZrxWdJkK'
+Content: [{"attrs":[],"columns":[{"blocks":[{"content":{"location":"kirby","image":["file://ocbquxRNZrxWdJkK"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"df1603dd-00d7-47c5-8cb5-dca961434386","isHidden":false,"type":"image"}],"id":"7448f694-2bbe-4858-b463-e5cc6407e63c","width":"1/1"}],"id":"384062ab-69af-4c6e-b915-0d2f90eef025"},{"attrs":[],"columns":[{"blocks":[{"content":{"text":"Ein schlaues Zitat.","citation":"Ein schlauer Mensch"},"id":"b52203f6-21d6-4dd6-9a7b-76795c540dca","isHidden":false,"type":"quote"}],"id":"a09f6ca2-6ece-42be-92f4-120167db23c6","width":"1/3"},{"blocks":[{"content":{"text":"<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"},"id":"0f03e9fc-342e-4d57-b3dd-a9b12d24afbb","isHidden":false,"type":"text"}],"id":"b410e929-3d99-49fa-84d4-81feefec5a68","width":"2/3"}],"id":"ce7067ba-b12d-46d9-8509-d8a6d41c0589"},{"attrs":[],"columns":[{"blocks":[{"content":{"location":"kirby","image":["file://tWNX7ZrzJUvS9Vad"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"b6685dcf-7cea-4819-b7a1-e315d4566847","isHidden":false,"type":"image"}],"id":"089f0b3a-fd1e-47a0-9089-96e528b0aadc","width":"1/1"}],"id":"fcd4212c-bf9e-4342-ba85-5625eaa7d704"},{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>test</p><p></p>"},"id":"9fc27815-260d-449c-8671-116ad72ccec9","isHidden":false,"type":"text"}],"id":"60800987-2bb8-48eb-a9c0-bd9a8e14d07b","width":"1/1"}],"id":"2a1a606d-f1ad-481c-83dd-267f2bf5c8ed"},{"attrs":[],"columns":[{"blocks":[{"content":{"location":"web","url":"https://youtu.be/NnQdiDVOlvI","video":[],"poster":[],"caption":"","autoplay":"false","muted":"true","loop":"false","controls":"true","preload":"auto"},"id":"1a1fedb4-9bb3-42e1-a12b-1bd331f3b5e5","isHidden":false,"type":"video"}],"id":"c2dd4d41-17e0-49df-9d4c-dbce2e69adb2","width":"2/3"},{"blocks":[{"content":[],"id":"8fc5aaab-4c46-4103-8835-e6b32314f4b7","isHidden":false,"type":"divider"},{"content":{"text":"lecker kaffee","citation":""},"id":"4df1690a-d665-4c5e-a590-5beadfcb5fb9","isHidden":false,"type":"quote"}],"id":"a20a6ca4-5553-415d-9618-f8d400973636","width":"1/3"}],"id":"85695244-76ba-41e1-9cb3-e85611818729"},{"attrs":[],"columns":[{"blocks":[{"content":{"level":"h2","text":"Zwischenhead"},"id":"d25fd0d6-ffe7-4c23-a879-14187672bfeb","isHidden":false,"type":"heading"}],"id":"ca74edf1-e949-477c-837f-ab025bb5135e","width":"1/1"}],"id":"d08a022e-b6a4-40e1-8417-8e51b396d720"},{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"},"id":"dc5a7f2d-2cf7-4537-9686-7d9fa457a8b9","isHidden":false,"type":"text"}],"id":"b63117dc-e720-4bc7-9653-97d9f9371943","width":"1/1"}],"id":"c39ddd0a-0553-4d77-a06e-7f405dde413e"},{"attrs":[],"columns":[{"blocks":[],"id":"28b02e94-4d03-4789-85b5-f85a7cb21a95","width":"1/6"},{"blocks":[{"content":{"location":"kirby","image":["file://xkPVM7MdXoEn4do6"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"db683e32-3d42-4ab1-94b7-2d9432bc6f06","isHidden":false,"type":"image"}],"id":"ac52b1f7-6f6a-4527-af8d-6d2b85b6865b","width":"4/6"},{"blocks":[],"id":"c663c311-f4d5-4a47-9776-9ab165886b02","width":"1/6"}],"id":"53a4f058-3963-492b-8be9-eb759706d528"},{"attrs":[],"columns":[{"blocks":[{"content":{"authors":"Auto 1, Auto 2"},"id":"3b07a5c0-d5de-46ff-a670-14d57c29ab74","isHidden":false,"type":"author"}],"id":"b485a7bf-dce1-44ea-91f2-48985a133d00","width":"1/1"}],"id":"fdb9c54b-72f7-460f-9740-05a5a4910185"}]
+
+----
+
+Cover: - 'file://tWNX7ZrzJUvS9Vad'
 
 ----
 
@@ -14,15 +18,154 @@ Date: 2023-11-24 16:00:00
 
 ----
 
-Author: []
+Author: - 'user://z1jTKnVP'
 
 ----
 
-Tags: universe, sky
+Tags: universe, sky, wtf, marmelade
 
 ----
 
-Subheading: Our quest to the edge of nowhere
+Text:
+
+-
+  content:
+    level: h3
+    text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.'
+  id: ec417333-19ef-44db-acdb-0b5d6d0aaf71
+  isHidden: false
+  type: heading
+-
+  content:
+    location: kirby
+    image:
+      -
+        id: tent-in-the-woods.jpg
+        image:
+          back: black
+          color: orange-500
+          cover: false
+          icon: image
+          url: 'http://grazgeschichten.test/media/pages/notes/exploring-the-universe/5220276450-1746550049/tent-in-the-woods.jpg'
+          src: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw'
+          srcset: 'http://grazgeschichten.test/media/pages/notes/exploring-the-universe/5220276450-1746550049/tent-in-the-woods-38x.jpg 38w, http://grazgeschichten.test/media/pages/notes/exploring-the-universe/5220276450-1746550049/tent-in-the-woods-76x.jpg 76w'
+        info: ''
+        link: /pages/notes+exploring-the-universe/files/tent-in-the-woods.jpg
+        sortable: true
+        text: tent-in-the-woods.jpg
+        uuid: 'file://xkPVM7MdXoEn4do6'
+        dragText: '(image: tent-in-the-woods.jpg)'
+        filename: tent-in-the-woods.jpg
+        type: image
+        url: 'http://grazgeschichten.test/media/pages/notes/exploring-the-universe/5220276450-1746550049/tent-in-the-woods.jpg'
+    src: ''
+    alt: 'Staring at stars'
+    caption: 'Staring at stars'
+    link: ''
+    ratio: 16/9
+    crop: true
+  id: _200yrtaus
+  isHidden: false
+  type: image
+-
+  content:
+    text: '<p><strong>The Big Oxmox</strong> advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic <a href="https://getkirby.com" rel="noopener noreferrer nofollow">Mountains</a>, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</p>'
+  id: _J5cUP6Q8A
+  isHidden: false
+  type: text
+-
+  content:
+    text: 'Time flies like an arrow; fruit flies like a banana'
+    citation: '<a href="https://en.wikipedia.org/wiki/Anthony_Oettinger" rel="noopener noreferrer nofollow">Anthony Oettinger</a>'
+  id: _sxaa7bs0y
+  isHidden: false
+  type: quote
+-
+  content:
+    level: h2
+    text: "Let's put a heading here"
+  id: _mg1sjf8a6
+  isHidden: false
+  type: heading
+-
+  content:
+    text: '<p>But nothing the <u>copy</u> said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their <em>projects</em> again and again. And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>'
+  id: _1gcmahr5x
+  isHidden: false
+  type: text
+-
+  content:
+    location: ''
+    url: 'https://vimeo.com/54400762'
+    video: []
+    poster: []
+    caption: 'I found this when searching for stars on Vimeo'
+    autoplay: 'false'
+    muted: 'true'
+    loop: 'false'
+    controls: 'true'
+    preload: ''
+  id: _d5m9sxprv
+  isHidden: false
+  type: video
+-
+  content:
+    text: |-
+      ## This is created by some good old markdown
+
+      You can mix it with the other blocks to get even more **flexibility**. Markdown can be <strong>mixed</strong> with HTML too, which is nice. And of course (link: https://getkirby.com text: Kirbytags) are cool too.
+  id: _mxb6p3yof
+  isHidden: false
+  type: markdown
+-
+  content:
+    text: "<ul><li><p>Look, it's a list</p></li><li><p>With some nice bullet points</p></li><li><p>Here's another one</p><ol><li><p>This is a nested list</p></li><li><p>With even more list items</p></li><li><p>Mixed list types are possible as well</p></li></ol></li></ul>"
+  id: b664b628-4782-4fc5-8b97-8fe6bb57f7fc
+  isHidden: false
+  type: list
+-
+  content:
+    level: h2
+    text: 'Stars stars stars'
+  id: _u6rqirt17
+  isHidden: false
+  type: heading
+-
+  content:
+    text: '<p>Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna <code>mollis</code> euismod. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>'
+  id: _35hdmhopv
+  isHidden: false
+  type: text
+-
+  content:
+    code: |-
+      <?php foreach ($page->text()->toBlocks() as $block): ?>
+      <div class="block">
+        <?= $block ?>
+      </div>
+      <?php endforeach ?>
+    language: php
+  id: _l0ugjspzr
+  isHidden: false
+  type: code
+-
+  content:
+    level: h3
+    text: 'Last heading – promised!'
+  id: _9ossz5bvo
+  isHidden: false
+  type: heading
+-
+  content:
+    text: '<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>'
+  id: _uxnakchw6
+  isHidden: false
+  type: text
+-
+  content: []
+  id: 871b6e43-40da-4ef7-b5dd-1a4bd6e91859
+  isHidden: false
+  type: layout-1-2
 
 ----
 

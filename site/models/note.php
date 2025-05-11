@@ -28,4 +28,9 @@ class NotePage extends Page
     {
         return parent::date()->toDate($format ?? 'd M, Y');
     }
+
+    public function layouts()
+    {
+        return $this->content()->get('content')->toLayouts();
+    }
 }
