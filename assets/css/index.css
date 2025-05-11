@@ -454,6 +454,7 @@ header > h1{
   gap: 2rem;
 }
 .column {
+  flex: 1 1 0;
 }
 /* Spaltenverhältnisse für typische Layouts */
 .columns--2 .column--8 { flex: 2 1 0; }
