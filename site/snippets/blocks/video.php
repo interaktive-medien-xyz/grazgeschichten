@@ -12,13 +12,29 @@
   https://getkirby.com/docs/guide/templates/snippets
 */
 ?>
-<?php if ($block->url()->isNotEmpty()): ?>
-<figure>
-  <span class="video" style="--w:16;--h:9">
-    <?= video($block->url()) ?>
-  </span>
-  <?php if ($block->caption()->isNotEmpty()): ?>
-  <figcaption class="video-caption"><?= $block->caption() ?></figcaption>
+<?php
+$url = $block->url();
+$caption = $block->caption();
+$autoplay = $block->autoplay()->isTrue();
+$controls = $block->controls()->isTrue();
+?>
+
+<figure class="block-video <?= $block->blockClass()->html() ?>"<?= $block->blockId()->isNotEmpty() ? ' id="' . $block->blockId()->html() . '"' : '' ?>>
+  <?php if ($url->isNotEmpty()): ?>
+  <div class="video-container">
+    <?php 
+    if (strpos($url, 'youtube.com') !== false || strpos($url, 'youtu.be') !== false) {
+        echo kirby()->kirbytags('(video: ' . $url . ' autoplay: ' . ($autoplay ? 'true' : 'false') . ' controls: ' . ($controls ? 'true' : 'false') . ')');
+    } elseif (strpos($url, 'vimeo.com') !== false) {
+        echo kirby()->kirbytags('(video: ' . $url . ' autoplay: ' . ($autoplay ? 'true' : 'false') . ' controls: ' . ($controls ? 'true' : 'false') . ')');
+    }
+    ?>
+  </div>
+  <?php endif ?>
+
+  <?php if ($caption->isNotEmpty()): ?>
+  <figcaption class="video-caption">
+    <?= $caption->kt() ?>
+  </figcaption>
   <?php endif ?>
 </figure>
-<?php endif ?>

@@ -1,0 +1,19 @@
+name: Text
+icon: text
+preview: text
+
+fields:
+  text:
+    type: textarea
+    label: Text
+    size: large
+  blockClass:
+    type: text
+    label: CSS Class
+    help: Add custom CSS classes
+    width: 1/2
+  blockId:
+    type: text
+    label: CSS ID
+    help: Add a unique identifier
+    width: 1/2 

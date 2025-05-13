@@ -390,6 +390,35 @@ header > h1{
   /* border: pink 100px solid; */
 }
 
+.testklasse{
+  color: #7e9abf;
+}
+
+.textklasse{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.quoteklasse{
+  background-color: red;
+}
+
+.bildklasse{
+  border: 10px solid #7e9abf;
+}
+
+.videoklasse{
+  border: #d16464 10px solid;
+}
+
+.gallerieklasse{
+  border: #a7bd68 10px solid;
+}
+
+#bildid{
+  width: 20px;
+}
+
+
 /* .blog-prevnext{
   border: 1px solid red;
 } */

@@ -25,7 +25,7 @@ if ($block->location()->value() === 'web') {
 
 ?>
 <?php if ($src): ?>
-<figure>
+<figure class="block-image <?= $block->blockClass()->html() ?>"<?= $block->blockId()->isNotEmpty() ? ' id="' . $block->blockId()->html() . '"' : '' ?>>
   <?php snippet('image', [
     'alt'      => $alt,
     'contain'  => $block->crop()->isFalse(),

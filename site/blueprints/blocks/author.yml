@@ -5,4 +5,7 @@ fields:
     type: text
     width: 1/1
     help: Trenne mehrere Namen mit Komma.
+  class:
+    extends: fields/blockclass
 preview: fields
+  

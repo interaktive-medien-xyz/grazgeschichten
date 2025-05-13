@@ -1,0 +1,34 @@
+name: Gallery
+icon: images
+preview: gallery
+
+fields:
+  images:
+    type: files
+    label: Images
+    multiple: true
+    layout: cards
+    info: "{{ file.dimensions }}"
+    uploads:
+      template: image
+  columns:
+    type: select
+    label: Columns
+    default: 3
+    options:
+      2: 2 Columns
+      3: 3 Columns
+      4: 4 Columns
+  caption:
+    type: text
+    label: Caption
+  blockClass:
+    type: text
+    label: CSS Class
+    help: Add custom CSS classes
+    width: 1/2
+  blockId:
+    type: text
+    label: CSS ID
+    help: Add a unique identifier
+    width: 1/2 

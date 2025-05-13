@@ -1,23 +1,22 @@
 <?php
 /** @var \Kirby\Cms\Block $block */
+$columns = $block->columns()->or('3');
 ?>
-<figure class="gallery">
-  <ul>
+
+<figure class="block-gallery columns-<?= $columns ?> <?= $block->blockClass()->html() ?>"<?= $block->blockId()->isNotEmpty() ? ' id="' . $block->blockId()->html() . '"' : '' ?>>
+  <div class="gallery-grid">
     <?php foreach ($block->images()->toFiles() as $image): ?>
-    <li>
-      <?php snippet('image', [
-        'alt'      => $image->alt(),
-        'contain'  => $block->crop()->isTrue(),
-        'lightbox' => true,
-        'ratio'    => $block->ratio()->or('auto'),
-        'src'      => $image->url(),
-      ]) ?>
-    </li>
+    <a href="<?= $image->url() ?>" class="gallery-item">
+      <img src="<?= $image->crop(600, 600)->url() ?>" 
+           alt="<?= $image->alt()->escape() ?>"
+           loading="lazy">
+    </a>
     <?php endforeach ?>
-  </ul>
+  </div>
+
   <?php if ($block->caption()->isNotEmpty()): ?>
-  <figcaption>
-    <?= $block->caption() ?>
+  <figcaption class="gallery-caption">
+    <?= $block->caption()->kt() ?>
   </figcaption>
   <?php endif ?>
 </figure>

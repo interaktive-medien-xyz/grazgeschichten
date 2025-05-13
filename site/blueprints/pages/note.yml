@@ -47,10 +47,10 @@ columns:
           - text
           - image
           - heading
-          - list
+          # - list
           - quote
-          - code
-          - table
+          # - code
+          # - table
           - video
           - gallery
           - divider

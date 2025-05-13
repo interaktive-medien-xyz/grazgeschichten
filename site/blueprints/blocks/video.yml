@@ -1,0 +1,30 @@
+name: Video
+icon: video
+preview: video
+
+fields:
+  url:
+    type: url
+    label: URL
+    help: YouTube or Vimeo URL
+  caption:
+    type: text
+    label: Caption
+  autoplay:
+    type: toggle
+    label: Autoplay
+    default: false
+  controls:
+    type: toggle
+    label: Controls
+    default: true
+  blockClass:
+    type: text
+    label: CSS Class
+    help: Add custom CSS classes
+    width: 1/2
+  blockId:
+    type: text
+    label: CSS ID
+    help: Add a unique identifier
+    width: 1/2 

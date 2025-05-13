@@ -1,0 +1,56 @@
+name: Image
+icon: image
+preview: image
+
+fields:
+  location:
+    type: select
+    label: Image Location
+    options:
+      local: Local
+      web: Web
+    default: local
+    width: 1/2
+  image:
+    type: files
+    label: Image
+    multiple: false
+    when:
+      location: local
+  src:
+    type: url
+    label: URL
+    when:
+      location: web
+  alt:
+    type: text
+    label: Alt Text
+  caption:
+    type: text
+    label: Caption
+  ratio:
+    type: select
+    label: Ratio
+    default: auto
+    options:
+      auto: Automatic
+      square: Square
+      4/3: 4:3
+      16/9: 16:9
+  crop:
+    type: toggle
+    label: Crop image
+    default: true
+  link:
+    type: text
+    label: Link
+  blockClass:
+    type: text
+    label: CSS Class
+    help: Add custom CSS classes
+    width: 1/2
+  blockId:
+    type: text
+    label: CSS ID
+    help: Add a unique identifier
+    width: 1/2 

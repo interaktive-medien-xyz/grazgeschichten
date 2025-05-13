@@ -1,0 +1,22 @@
+name: Quote
+icon: quote
+preview: quote
+
+fields:
+  text:
+    type: textarea
+    label: Quote
+    size: medium
+  citation:
+    type: text
+    label: Citation
+  blockClass:
+    type: text
+    label: CSS Class
+    help: Add custom CSS classes
+    width: 1/2
+  blockId:
+    type: text
+    label: CSS ID
+    help: Add a unique identifier
+    width: 1/2 

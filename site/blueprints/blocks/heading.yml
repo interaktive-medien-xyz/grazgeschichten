@@ -1,0 +1,27 @@
+name: Heading
+icon: title
+preview: heading
+
+fields:
+  text:
+    type: text
+    label: Text
+  level:
+    type: select
+    label: Level
+    default: h2
+    options:
+      - h1
+      - h2
+      - h3
+      - h4
+  blockClass:
+    type: text
+    label: CSS Class
+    help: Add custom CSS classes
+    width: 1/2
+  blockId:
+    type: text
+    label: CSS ID
+    help: Add a unique identifier
+    width: 1/2 
