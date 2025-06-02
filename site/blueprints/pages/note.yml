@@ -52,9 +52,32 @@ columns:
           # - code
           # - table
           - video
+          - accordion
           - gallery
           - divider
           - author
+          - type: audio
+            name: Audio
+            icon: audio
+            fields:
+              audio:
+                label: Audio File
+                type: files
+                accept: audio/*
+                multiple: false
+              caption:
+                label: Caption
+                type: text
+              blockClass:
+                type: text
+                label: CSS Class
+                help: Add custom CSS classes
+                width: 1/2
+              blockId:
+                type: text
+                label: CSS ID
+                help: Add a unique identifier
+                width: 1/2
   - width: 1/3
     # This second column holds a fields section with multiple fields
     # More about fields sections: https://getkirby.com/docs/reference/panel/sections/fields
