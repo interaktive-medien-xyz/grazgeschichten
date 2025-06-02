@@ -23,6 +23,7 @@
 ?>
 <?php snippet('header') ?>
 
+<div class="notes-content">
 <?php if (empty($tag) === false): ?>
 <header class="h1">
   <h1>
@@ -41,6 +42,6 @@
   </li>
   <?php endforeach ?>
 </ul>
-
+</div>
 <?php snippet('pagination', ['pagination' => $notes->pagination()]) ?>
 <?php snippet('footer') ?>

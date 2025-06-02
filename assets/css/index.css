@@ -423,6 +423,20 @@ header > h1{
   border: 1px solid red;
 } */
 
+.author{
+  font-family: serif;
+  color: var(--color-code-comment);
+  font-size: smaller;
+}
+
+.notes-content{
+  padding: 3rem;
+}
+
+.note-audio{
+  width: 100%;
+}
+
 
 @media screen and (min-width: 60rem) {
   body {
