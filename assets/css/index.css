@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'VictorMono', monospace;
   src: url('../font/VictorMono.ttf') format('truetype');
-  font-weight: 600;
   font-style: normal;
 }
 
@@ -142,7 +141,7 @@ small {
 
 h1, h2 {
   line-height: inherit;
-
+  font-weight: 600;
 }
 
 h1{
@@ -155,6 +154,7 @@ h2{
 
 .text {
   line-height: 1.5em;
+  font-weight: 400;
 }
 .text a {
   text-decoration: underline;
@@ -238,12 +238,12 @@ h2{
 }
 .text blockquote {
   font-size: 1.25rem;
-  color: grey;
   line-height: 1.325em;
   /* border-left: 2px solid var(--color-black);
   padding-left: 1rem; */
   margin: 3rem 0;
   max-width: 25rem;
+  font-style: oblique;
 }
 .text blockquote footer {
   font-size: .875rem;
