@@ -1,0 +1,78 @@
+name: Map
+label: SVG Karte
+icon: map
+preview: map
+
+# CSS-Struktur des Map-Blocks:
+# .block-map           - Äußerer Container
+# .map-wrapper         - Scrollbarer Container
+# .map-container       - SVG-Container
+# .map-title          - Titel (falls vorhanden)
+# .map-description    - Beschreibung (falls vorhanden)
+#
+# Größenklassen:
+# .map-small          - Kleine Darstellung
+# .map-medium         - Mittlere Darstellung (Standard)
+# .map-large          - Große Darstellung
+# .map-full           - Volle Breite
+#
+# Zusätzliche Klassen:
+# .is-interactive     - Wenn Interaktivität aktiviert
+# .is-zoomable        - Wenn Zoom aktiviert
+
+fields:
+  svg:
+    label: SVG-Datei
+    type: files
+    multiple: false
+    accept: svg
+    width: 2/3
+  title:
+    label: Titel
+    type: text
+    width: 1/3
+  alt:
+    label: Alt-Text
+    type: text
+    width: 1/1
+    help: Beschreibender Text für Screenreader und wenn die Karte nicht geladen werden kann
+  description:
+    label: Beschreibung
+    type: textarea
+    size: small
+  size:
+    label: Größe
+    type: select
+    options:
+      small: Klein
+      medium: Mittel
+      large: Groß
+      full: Volle Breite
+    default: medium
+    width: 1/3
+  interactive:
+    label: Interaktiv
+    type: toggle
+    default: true
+    width: 1/3
+  zoom:
+    label: Zoom erlauben
+    type: toggle
+    default: false
+    width: 1/3
+  blockClass:
+    type: text
+    label: CSS Class
+    help: |
+      Fügen Sie benutzerdefinierte CSS-Klassen hinzu.
+      Beispiel für volle Breite:
+      .ihre-klasse .map-wrapper {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+      }
+    width: 1/2
+  blockId:
+    type: text
+    label: CSS ID
+    help: Fügen Sie einen eindeutigen Identifikator hinzu
+    width: 1/2
