@@ -139,6 +139,10 @@ small {
   grid-auto-flow: dense;
 }
 
+p{
+  padding: 3%;
+}
+
 h1, h2 {
   line-height: inherit;
   font-weight: 600;
@@ -147,10 +151,12 @@ h1, h2 {
 
 h1{
   font-size: 3rem;
+  padding-left: 3%;
 }
 
 h2{
   font-size: 2rem;
+  padding-left: 3%;
 }
 
 .text {
@@ -243,8 +249,9 @@ h2{
   line-height: 1.325em;
   /* border-left: 2px solid var(--color-black);
   padding-left: 1rem; */
-  margin: 3rem 0;
+  margin: 3rem;
   max-width: 25rem;
+  text-align: center;
 }
 .text blockquote footer {
   font-size: .875rem;
@@ -507,11 +514,11 @@ header > h1{
 
 /* Layout-Field Styles */
 .layout {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .columns {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 .column {
   flex: 1 1 0;

@@ -5,24 +5,29 @@
 .Hintergrund-weiß{
   background-color: #FBFBF9;
   color: #2C372F;
+  padding: 1rem 30% 1rem 20%;
 }
 
 .Hintergrund-hellGrün{
   background-color: #9BB8A2;
   color: #2C372F;
+  padding: 1rem 30% 1rem 20%;
 }
 
 .Hintergrund-mittelGrün{
   background-color: #66846E;
   color: #FBFBF9;
+  padding: 1rem 30% 1rem 20%;
 }
 
 .Hintergrund-dunkelGrün{
   background-color: #394C3E;
   color: #FBFBF9;
+  padding: 1rem 30% 1rem 20%;
 }
 
 .Hintergrund-sehrDunkelGrün{
   background-color: #2C372F;
   color: #FBFBF9;
+  padding: 1rem 30% 1rem 20%;
 }
