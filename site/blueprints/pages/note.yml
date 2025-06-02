@@ -57,6 +57,7 @@ columns:
           - button
           - map
           - gallery
+          - iframe
           - divider
           - author
           - type: audio
