@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'VictorMono', monospace;
   src: url('../font/VictorMono.ttf') format('truetype');
-  font-weight: 600;
   font-style: normal;
 }
 
@@ -142,6 +141,7 @@ small {
 
 h1, h2 {
   line-height: inherit;
+  font-weight: 600;
 
 }
 
@@ -155,6 +155,7 @@ h2{
 
 .text {
   line-height: 1.5em;
+  font-weight: 400;
 }
 .text a {
   text-decoration: underline;

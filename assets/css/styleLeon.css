@@ -2,13 +2,27 @@
   font-size: 4em;
 }
 
-.block-weiß{
+.Hintergrund-weiß{
   background-color: #FBFBF9;
   color: #2C372F;
 }
 
-.block-dunkelGrün{
+.Hintergrund-hellGrün{
+  background-color: #9BB8A2;
+  color: #2C372F;
+}
+
+.Hintergrund-mittelGrün{
   background-color: #66846E;
   color: #FBFBF9;
-  padding: 1rem;
+}
+
+.Hintergrund-dunkelGrün{
+  background-color: #394C3E;
+  color: #FBFBF9;
+}
+
+.Hintergrund-sehrDunkelGrün{
+  background-color: #2C372F;
+  color: #FBFBF9;
 }
