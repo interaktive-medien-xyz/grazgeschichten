@@ -248,8 +248,9 @@ h2{
   line-height: 1.325em;
   /* border-left: 2px solid var(--color-black);
   padding-left: 1rem; */
-  margin: 3rem 0;
+  margin: 3rem;
   max-width: 25rem;
+  text-align: center;
 }
 .text blockquote footer {
   font-size: .875rem;
@@ -502,7 +503,7 @@ header > h1{
 }
 .columns {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 .column {
   flex: 1 1 0;
