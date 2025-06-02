@@ -9,7 +9,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 code[class*="language-"],
 pre[class*="language-"] {
   color: var(--color-code-white);
-	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-family: 'VictorMono', monospace;
 	font-size: 1em;
 	text-align: left;
 	white-space: pre;
@@ -131,6 +131,6 @@ pre[class*="language-"] {
 .codeblock figcaption {
   color: var(--color-code-white);
   padding: .5rem 1rem;
-  font-family: var(--font-family-mono);
+  font-family: 'VictorMono', monospace;
   border-bottom: 1px solid #333;
 }

@@ -37,6 +37,7 @@
     'assets/css/prism.css',
     'assets/css/lightbox.css',
     'assets/css/index.css',
+    'assets/css/styleLeon.css',
     '@auto'
   ]) ?>
 
