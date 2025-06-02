@@ -52,6 +52,7 @@ columns:
           # - code
           # - table
           - video
+          - iframe
           - accordion
           - button
           - gallery
