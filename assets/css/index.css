@@ -498,7 +498,7 @@ header > h1{
 
 /* Layout-Field Styles */
 .layout {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .columns {
   display: flex;
