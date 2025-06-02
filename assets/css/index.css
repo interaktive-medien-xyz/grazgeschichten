@@ -140,6 +140,10 @@ small {
   grid-auto-flow: dense;
 }
 
+p{
+  padding: 3%;
+}
+
 h1, h2 {
   line-height: inherit;
 
@@ -147,12 +151,12 @@ h1, h2 {
 
 h1{
   font-size: 3rem;
-  margin-left: 3%;
+  padding-left: 3%;
 }
 
 h2{
   font-size: 2rem;
-  margin-left: 3%;
+  padding-left: 3%;
 }
 
 .text {
