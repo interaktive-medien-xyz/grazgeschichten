@@ -55,6 +55,7 @@ columns:
           - accordion
           - button
           - gallery
+          - iframe
           - divider
           - author
           - type: audio
