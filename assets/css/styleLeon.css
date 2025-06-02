@@ -1,0 +1,28 @@
+.test{
+  font-size: 4em;
+}
+
+.Hintergrund-weiß{
+  background-color: #FBFBF9;
+  color: #2C372F;
+}
+
+.Hintergrund-hellGrün{
+  background-color: #9BB8A2;
+  color: #2C372F;
+}
+
+.Hintergrund-mittelGrün{
+  background-color: #66846E;
+  color: #FBFBF9;
+}
+
+.Hintergrund-dunkelGrün{
+  background-color: #394C3E;
+  color: #FBFBF9;
+}
+
+.Hintergrund-sehrDunkelGrün{
+  background-color: #2C372F;
+  color: #FBFBF9;
+}

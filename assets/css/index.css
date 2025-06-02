@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'VictorMono', monospace;
+  src: url('../font/VictorMono.ttf') format('truetype');
+  font-style: normal;
+}
+
+.block-text{
+  line-height: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,12 +32,11 @@
   --color-code-aqua:        #8abeb7;
   --color-code-blue:        #7e9abf;
   --color-code-purple:      #b294bb;
-  --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
 }
 
 html {
-  font-family: var(--font-family-sans);
+  font-family: 'VictorMono', monospace;
   color: var(--color-text);
   background: var(--color-background);
 }
@@ -130,14 +139,23 @@ small {
   grid-auto-flow: dense;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
+h1, h2 {
   line-height: inherit;
+  font-weight: 600;
+
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
 }
 
 .text {
   line-height: 1.5em;
+  font-weight: 400;
 }
 .text a {
   text-decoration: underline;
@@ -152,6 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 .text ul,
 .text ol {
   margin-bottom: 1.5rem;
+  font-size: 1.25rem;
 }
 .text ul,
 .text ol {
@@ -176,14 +195,11 @@ h1, h2, h3, h4, h5, h6 {
 .text h1,
 .h1,
 .intro {
-  font-size: 2rem;
   margin-bottom: 3rem;
   line-height: 1.25em;
 }
 .text h2,
 .h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
   margin-bottom: 1.25rem;
 }
 .text h3,
@@ -194,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
 }
 .text code {
-  font-family: var(--font-family-mono);
+  font-family: 'VictorMono', monospace;
   font-size: 1em;
   background: var(--color-light);
   padding: 0 .5rem;
@@ -395,7 +411,7 @@ header > h1{
 }
 
 .textklasse{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'VictorMono', monospace;
 }
 
 .quoteklasse{
@@ -439,10 +455,11 @@ header > h1{
 
 
 @media screen and (min-width: 60rem) {
+  /*
   body {
     --padding: 3rem;
   }
-
+*/
   .grid {
     grid-template-columns: repeat(12, 1fr);
   }
