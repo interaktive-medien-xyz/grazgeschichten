@@ -55,6 +55,7 @@ columns:
           - iframe
           - accordion
           - button
+          - map
           - gallery
           - divider
           - author
