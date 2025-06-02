@@ -147,10 +147,12 @@ h1, h2 {
 
 h1{
   font-size: 3rem;
+  margin-left: 3%;
 }
 
 h2{
   font-size: 2rem;
+  margin-left: 3%;
 }
 
 .text {
