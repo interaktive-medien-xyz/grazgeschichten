@@ -2,3 +2,13 @@
   font-size: 4em;
 }
 
+.block-weiß{
+  background-color: #FBFBF9;
+  color: #2C372F;
+}
+
+.block-dunkelGrün{
+  background-color: #66846E;
+  color: #FBFBF9;
+  padding: 1rem;
+}

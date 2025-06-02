@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'VictorMono', monospace;
   src: url('../font/VictorMono.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -140,10 +140,17 @@ small {
   grid-auto-flow: dense;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
+h1, h2 {
   line-height: inherit;
+
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
 }
 
 .text {
@@ -162,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 .text ul,
 .text ol {
   margin-bottom: 1.5rem;
+  font-size: 1.25rem;
 }
 .text ul,
 .text ol {
@@ -186,14 +194,11 @@ h1, h2, h3, h4, h5, h6 {
 .text h1,
 .h1,
 .intro {
-  font-size: 2rem;
   margin-bottom: 3rem;
   line-height: 1.25em;
 }
 .text h2,
 .h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
   margin-bottom: 1.25rem;
 }
 .text h3,
@@ -435,10 +440,11 @@ header > h1{
 
 
 @media screen and (min-width: 60rem) {
+  /*
   body {
     --padding: 3rem;
   }
-
+*/
   .grid {
     grid-template-columns: repeat(12, 1fr);
   }
