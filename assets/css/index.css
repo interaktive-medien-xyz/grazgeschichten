@@ -1,6 +1,17 @@
+@font-face {
+  font-family: "Necto Mono";
+  src: url(../fonts/nectomono/NectoMono-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Victor Mono";
+  src: url(../fonts/victormono/WOFF2/VictorMono-Regular.woff2);
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -39,6 +50,7 @@ body {
   max-width: 100vw;
   margin: 0 auto;
   /* background-color: red; */
+  overflow-x: hidden;
 }
 li {
   list-style: none;
@@ -318,34 +330,6 @@ hr {
   line-height: 1.5em;
 }
 
-.footer {
-  padding: 9rem 0 6rem;
-  line-height: 1.5em;
-}
-.footer:before {
-  content: "";
-  display: block;
-  width: 1.5rem;
-  height: 2px;
-  background: var(--color-black);
-  margin-bottom: 1.5rem;
-}
-
-.footer h2 {
-  font-weight: 600;
-  margin-bottom: .75rem;
-}
-.footer ul,
-.footer p {
-  color: var(--color-text-grey);
-}
-.footer p {
-  max-width: 15rem;
-}
-.footer a:hover {
-  color: var(--color-text);
-}
-
 
 .map {
   --w: 2;
@@ -437,6 +421,131 @@ header > h1{
   width: 100%;
 }
 
+.home-hero{
+  width: 100vw;
+  height: 80vh;
+  background-image: url(../images/city-3281607_1920.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */ 
+    filter: url(resources.svg#desaturate); /* Gecko */
+    filter: gray; /* IE */
+    -webkit-filter: grayscale(1); /* Old WebKit */
+}
+
+.home-hero > h1{
+  font-size: 6vw;
+  padding: 1rem;
+  font-family: Victor Mono;
+}
+
+.home-info{
+  background-color: #019A48;
+  font-family: Victor Mono;
+  width: 100vw;
+  height: 100%;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-about{
+  width: 60vw;
+}
+
+.home-about > h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.home-daten{
+  width: 30vw;
+}
+
+.home-daten > h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.home-subhead{
+  font-size: 3rem;
+  margin: 2rem;
+  margin-top: 4rem;
+  border-bottom: #000 1px solid;
+  font-family: Victor Mono;
+}
+
+.footer{
+  margin-top: 10rem;
+  width: 100vw;
+  background: rgba(76, 76, 76, 0.7);
+  padding: 2rem;
+  display: flex;
+  padding-bottom: 10vw;
+}
+
+.footer-about-wrapper > h1 {
+  font-size: 1rem;
+  color: white;
+  font-family: Victor Mono;
+  margin-bottom: 10px;
+}
+
+.footer-about{
+  font-family: Victor Mono;
+  color: rgb(180, 180, 180);
+  width: 40vw;
+}
+
+.footer-about-wrapper{
+  margin-right: 4rem;
+}
+
+.footer-partner > h1{
+  font-size: 1rem;
+  color: white;
+  font-family: Victor Mono;
+  margin-bottom: 10px;
+}
+
+.footer-logo{
+  width: 350px;
+  object-fit: contain;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
+
+.footer-nav{
+  margin-right: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav > h1 {
+  font-size: 1rem;
+  color: white;
+  font-family: Victor Mono;
+  margin-bottom: 10px;
+}
+
+.footer-nav > a {
+  font-size: 1rem;
+  color: rgb(180, 180, 180);
+  font-family: Victor Mono;
+}
+
+.footer-nav > a:hover{
+  color: #019A48;
+}
 
 @media screen and (min-width: 60rem) {
   body {
@@ -509,6 +618,169 @@ header > h1{
   .columns {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .home-info{
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .home-about{
+    width: 90vw;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .home-daten{
+    width: 90vw;
+    margin-bottom: 40px;
+  }
+
+  .footer{
+    padding: 1rem;
+    flex-direction: column;
+    padding-bottom: 4rem;
+  }
+
+  .footer-about{
+    width: 90vw;
+    margin-bottom: 40px;
+  }
+
+  .footer-logo{
+    width: 300px;
+    padding-top: 1rem;
+  }
+}
+
+/* Notes Grid Layout - Allgemeine Styles */
+.notes-grid {
+  display: grid;
+  gap: 0.5rem;
+  padding: 2rem;
+}
+
+/* Homepage-spezifische Note-Grid Styles */
+.home .notes-grid {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.home .note-card {
+  position: relative;
+  aspect-ratio: 16/9;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.home .note-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.home .note-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.home .note-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(76, 76, 76, 0.7);
+  color: white;
+  font-size: 1.5rem;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  font-family: Victor Mono;
+}
+
+.home .note-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.home .note-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home .note-card:hover .note-title {
+  opacity: 0;
+}
+
+.home .note-card:hover .note-cover {
+  opacity: 1;
+}
+
+/* Ursprüngliche Note-Styles für einzelne Note-Seiten */
+.note-card {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.note-card:hover {
+  transform: translateY(-4px);
+}
+
+.note-cover {
+  aspect-ratio: 3/2;
+  overflow: hidden;
+  position: relative;
+}
+
+.note-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.note-title {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.note-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.note-title a:hover {
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .home .notes-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .home .note-title {
+    font-size: 1.25rem;
+    padding: 1rem;
   }
 }
 
