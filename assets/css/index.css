@@ -145,7 +145,7 @@ p{
 }
 
 h1, h2 {
-  line-height: inherit;
+  line-height: normal;
   font-weight: 600;
 
 }
