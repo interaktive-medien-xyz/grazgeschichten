@@ -251,7 +251,6 @@ h2{
 }
 .text blockquote {
   font-size: 1.25rem;
-  color: grey;
   line-height: 1.325em;
   /* border-left: 2px solid var(--color-black);
   padding-left: 1rem; */
@@ -260,11 +259,13 @@ h2{
   text-align: center;
   font-style: oblique;
   padding-bottom: 50px;
+  font-weight: 700;
 }
 .text blockquote footer {
   font-size: .875rem;
   font-style: italic;
   margin-left: 85px;
+  color: #afafaf;
 }
 .text figure {
   margin: 3rem 0;
@@ -350,6 +351,8 @@ hr {
 .video-caption {
   padding-top: .75rem;
   line-height: 1.5em;
+  font-weight: 400;
+  color: #afafaf;
 }
 
 .footer {
