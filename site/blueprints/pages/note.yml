@@ -57,6 +57,7 @@ columns:
           - button
           - map
           - gallery
+          - image-slider
           - iframe
           - divider
           - author
