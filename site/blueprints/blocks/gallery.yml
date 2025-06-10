@@ -3,14 +3,21 @@ icon: images
 preview: gallery
 
 fields:
-  images:
-    type: files
-    label: Images
-    multiple: true
-    layout: cards
-    info: "{{ file.dimensions }}"
-    uploads:
-      template: image
+  gallery_items:
+    type: structure
+    label: Gallery Items
+    fields:
+      image:
+        type: files
+        label: Image
+        multiple: false
+        layout: cards
+        info: "{{ file.dimensions }}"
+        uploads:
+          template: image
+      caption:
+        type: text
+        label: Caption
   columns:
     type: select
     label: Columns
@@ -19,9 +26,6 @@ fields:
       2: 2 Columns
       3: 3 Columns
       4: 4 Columns
-  caption:
-    type: text
-    label: Caption
   blockClass:
     type: text
     label: CSS Class

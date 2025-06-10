@@ -88,4 +88,13 @@
     </nav>
   </header>
 
+  <header class="home-header">
+  <a href="<?= $site->url() ?>" class="logo">
+  <h1 class="logo-graz">GRAZ</h1>
+  <h1 class="logo-geschichten">GESCHICHTEN</h1>
+  </a>
+
+  <a class="about-link" href="">Über das Projekt</a>
+</header>
+
   <main class="main">

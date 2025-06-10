@@ -1,0 +1,26 @@
+name: Scroll Slider
+icon: images
+preview: scroll-slider
+
+fields:
+  images:
+    type: files
+    label: Images
+    multiple: true
+    layout: cards
+    info: "{{ file.dimensions }}"
+    uploads:
+      template: image
+  caption:
+    type: text
+    label: Caption
+  blockClass:
+    type: text
+    label: CSS Class
+    help: Add custom CSS classes
+    width: 1/2
+  blockId:
+    type: text
+    label: CSS ID
+    help: Add a unique identifier
+    width: 1/2 

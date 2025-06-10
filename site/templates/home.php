@@ -23,6 +23,19 @@ $notes = page('notes')->children()->listed()->sortBy('date', 'desc');
 ?>
 
 <?php snippet('header') ?> 
+<?php
+/*
+<header class="home-header">
+  <a href="<?= $site->url() ?>" class="logo">
+  <h1 class="logo-graz">GRAZ</h1>
+  <h1 class="logo-geschichten">GESCHICHTEN</h1>
+  </a>
+
+  <a class="about-link" href="">Über das Projekt</a>
+</header>
+
+*/
+?>
 
 <header class="home-header">
   <a href="<?= $site->url() ?>" class="logo">
@@ -34,17 +47,14 @@ $notes = page('notes')->children()->listed()->sortBy('date', 'desc');
 </header>
 
 <div class="home-hero">
-  
 </div>
 
 <section class="home-info">
   <div class="home-about">
-    <!--<h2>Hier sollte was anderes stehen</h2> -->
-    <p>Grazer Stadtgeschichten ist das Ergebnis eines gemeinsamen Projekts der FH Joanneum und der Ostfalia Hochschule. Eine Woche lang hatten die Studierenden aus Österreich und Deutschland Zeit, Wege und Perspektiven zu entwickeln, um Graz neu zu erzählen.
+    <p>GRAZGESCHICHTEN ist das Ergebnis eines gemeinsamen Projekts der FH Joanneum und der Ostfalia Hochschule. Eine Woche lang hatten die Studierenden aus Österreich und Deutschland Zeit, Wege und Perspektiven zu entwickeln, um Graz neu zu erzählen.
     Die Website versammelt elf eigenständige Beiträge, die einen neuen und erfrischenden Blick auf die Stadt mit den roten Dächern werfen.</p>
   </div>
   <div class="home-daten">
-  <h2>Hier sollte was anderes stehen</h2>
   <p>47° 4' 0.12 N 15° 25' 59.88 E <br>
   RESIDENTS: 302.479 <br>
   ALTITUDE: 353m</p>
