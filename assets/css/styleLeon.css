@@ -38,7 +38,15 @@
 }
 
 .audio-element{
-  margin-left: 443px;
-  margin-right: 442px;
+  padding-left: 443px;
+  padding-right: 442px;
 }
 
+.foto-textbreit{
+  padding-left: 230px;
+  padding-right: 240px;
+}
+
+.foto-textbreit .img-caption{
+  margin-left: 0;
+}

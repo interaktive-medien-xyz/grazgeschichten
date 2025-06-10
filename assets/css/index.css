@@ -13,9 +13,22 @@
   margin-left: 230px;
 }
 
+.gallery-grid{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-left: 127.5px;
+  padding-right: 128px;
+}
+
+.block-gallery .gallery-caption{
+  margin-left: 123px;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -250,21 +263,30 @@ h2{
   font-weight: 600;
 }
 .text blockquote {
-  font-size: 1.25rem;
-  line-height: 1.325em;
   /* border-left: 2px solid var(--color-black);
   padding-left: 1rem; */
-  margin: 3rem;
-  max-width: 25rem;
-  text-align: center;
+  margin-left: 123px;
+  margin-right: 240px;
   font-style: oblique;
   padding-bottom: 50px;
   font-weight: 700;
+
+}
+
+.map-description{
+  margin: 0;
+  padding-left: 85px;
+  padding-right: 240px;
+}
+
+.text blockquote p{
+  font-size: 40px;
+  line-height: 1.5em;
+  margin: 0;
 }
 .text blockquote footer {
   font-size: .875rem;
   font-style: italic;
-  margin-left: 85px;
   color: #afafaf;
 }
 .text figure {
