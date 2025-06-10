@@ -32,6 +32,9 @@
 .block-video{
   padding-bottom: 100px;
 }
+.audio-block{
+  padding-bottom: 100px;
+}
 .columns--1 .block-text p{
   margin-right: 240px;
   margin-left: 230px;
