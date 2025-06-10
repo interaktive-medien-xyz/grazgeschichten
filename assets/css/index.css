@@ -91,14 +91,6 @@ small {
   /* margin-bottom: 6rem; */
 }
 
-/*.logo {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  cursor: pointer;
-}*/
-
 .menu {
   display: flex;
 }
@@ -444,34 +436,24 @@ header > h1{
   font-family: Victor Mono;
 }
 
-<<<<<<< Updated upstream
-.home-info{
-  background-color: #019A48;
-=======
 .home-header{
-  font-size: 6vw;
+  font-size: 4vw;
   padding: 1rem;
   font-family: Victor Mono;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   position: absolute;
-  width: 100%;
   z-index: 5;
+  width: 100%;
 }
 
 .home-info{
-  background-color: rgba(122, 175, 136, 1);
->>>>>>> Stashed changes
+  background-color: rgba(104, 143, 119, 1);
   font-family: Victor Mono;
   width: 100vw;
   height: 100%;
   padding: 2rem;
-<<<<<<< Updated upstream
-  color: white;
-=======
   color: rgb(255, 255, 255);
->>>>>>> Stashed changes
   display: flex;
   justify-content: space-between;
 }
@@ -482,8 +464,12 @@ header > h1{
 
 .home-about > h2 {
   font-size: 1.5rem;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(0, 0, 0);
   margin-bottom: 20px;
+}
+
+.home-about > p{
+  font-size: 1.25rem;
 }
 
 .home-daten{
@@ -492,30 +478,20 @@ header > h1{
 
 .home-daten > h2 {
   font-size: 1.5rem;
-<<<<<<< Updated upstream
-  border-bottom: 1px solid white;
-=======
->>>>>>> Stashed changes
+  border-bottom: 1px solid rgb(0, 0, 0);
   margin-bottom: 20px;
 }
 
 .home-subhead{
   font-size: 3rem;
   margin: 2rem;
-<<<<<<< Updated upstream
   margin-top: 4rem;
-  border-bottom: #000 1px solid;
-  font-family: Victor Mono;
-}
-
-=======
-  margin-top: 8rem;
   font-family: Victor Mono;
 }
 
 .logo{
+  margin-top: -1rem;
   font-weight: lighter;
-  font-size: 5rem;
   display: flex;
   align-items: center;
 }
@@ -523,29 +499,17 @@ header > h1{
 .logo-graz{
   z-index: 6;
   color: rgba(239, 63, 83, 1);
-  padding-bottom: 2rem;
-
+  padding-bottom: 3rem;
 }
 
 .logo-geschichten{
   position: absolute;
-  padding-left: 2rem;
+  padding-left: 3rem;
   z-index: 5;
   color: #666;
 }
 
-.about-link{
-  font-size: 1.5rem;
-  z-index: 5;
-}
-
-.about-link:hover{
-  color: rgba(239, 63, 83, 1);
-}
-
->>>>>>> Stashed changes
 .footer{
-  margin-top: 10rem;
   width: 100vw;
   background: rgba(76, 76, 76, 0.7);
   padding: 2rem;
@@ -606,6 +570,14 @@ header > h1{
 
 .footer-nav > a:hover{
   color: #019A48;
+}
+
+.about-link{
+  font-size: 1.5rem;
+}
+
+.about-link:hover{
+  color: rgba(239, 63, 83, 1);
 }
 
 @media screen and (min-width: 60rem) {
@@ -719,6 +691,8 @@ header > h1{
   display: grid;
   gap: 0.5rem;
   padding: 2rem;
+  /*background-color: rgba(104, 143, 119, 1);*/
+  padding-bottom: 10rem;
 }
 
 /* Homepage-spezifische Note-Grid Styles */
@@ -759,7 +733,7 @@ header > h1{
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgba(76, 76, 76, 0.7);
+  background: rgba(0, 0, 0);
   color: white;
   font-size: 1.5rem;
   transition: opacity 0.3s ease;

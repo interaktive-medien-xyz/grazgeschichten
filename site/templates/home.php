@@ -23,8 +23,6 @@ $notes = page('notes')->children()->listed()->sortBy('date', 'desc');
 ?>
 
 <?php snippet('header') ?> 
-<<<<<<< Updated upstream
-=======
 <?php
 /*
 <header class="home-header">
@@ -38,19 +36,16 @@ $notes = page('notes')->children()->listed()->sortBy('date', 'desc');
 
 */
 ?>
->>>>>>> Stashed changes
 
 <div class="home-hero">
-  <h1>GRAZGESCHICHTEN</h1>
 </div>
 
 <section class="home-info">
   <div class="home-about">
-    <h2>Hier sollte was anderes stehen</h2> 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias mollitia illo consequuntur veniam eum nobis itaque nesciunt assumenda totam culpa. Asperiores libero dolores, omnis praesentium cupiditate in voluptas eius at, placeat sequi repellendus officia saepe laboriosam esse expedita corporis animi atque! Dignissimos omnis dolore accusantium vitae blanditiis deleniti necessitatibus excepturi, adipisci officia ipsum animi explicabo doloribus sint illum atque odit praesentium voluptates ad molestiae, laboriosam sed? Odio magnam blanditiis saepe accusantium, sit repellat libero assumenda hic maiores? Similique quaerat, labore laudantium minus iusto velit vel, corporis eum quibusdam repellat sed soluta ab explicabo. Error non, nesciunt vero similique velit animi.</p>
+    <p>GRAZGESCHICHTEN ist das Ergebnis eines gemeinsamen Projekts der FH Joanneum und der Ostfalia Hochschule. Eine Woche lang hatten die Studierenden aus Österreich und Deutschland Zeit, Wege und Perspektiven zu entwickeln, um Graz neu zu erzählen.
+    Die Website versammelt elf eigenständige Beiträge, die einen neuen und erfrischenden Blick auf die Stadt mit den roten Dächern werfen.</p>
   </div>
   <div class="home-daten">
-  <h2>Hier sollte was anderes stehen</h2>
   <p>47° 4' 0.12 N 15° 25' 59.88 E <br>
   RESIDENTS: 302.479 <br>
   ALTITUDE: 353m</p>
