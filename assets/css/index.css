@@ -7,7 +7,6 @@
 .block-text{
   line-height: 1;
 }
-
 .columns--1 .block-text p{
   margin-right: 240px;
   margin-left: 230px;
@@ -22,8 +21,8 @@
   --padding: 1.5rem;
   --color-black: #000;
   --color-white: #fff;
-  --color-grey: #777;
-  --color-light: #efefef;
+  --color-grey: #afafaf;
+  --color-light: #fbfbf9;
   --color-text: var(--color-black);
   --color-text-grey: var(--color-grey);
   --color-background: var(--color-white);
@@ -83,13 +82,18 @@ small {
 .color-grey {
   color: var(--color-text-grey);
 }
-
+.block-author{
+  margin-bottom: 100px;
+  margin-left: 85px;
+  font-weight: 400;
+  color: #afafaf;
+}
 .header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 90px 0 50px 0;
+  margin: 50px 0 50px 0;
 }
 
 .logo {
@@ -155,14 +159,14 @@ h1, h2 {
 
 h1{
   font-size: 3rem;
-  padding-left: 85px;
-  padding-bottom: 50px;
+  margin-left: 85px;
+  margin-bottom: 50px;
 }
 
 h2{
   font-size: 2rem;
-  padding-left: 85px;
-  padding-bottom: 65px;
+  margin-left: 85px;
+  margin-bottom: 65px;
 }
 
 .text {
@@ -258,7 +262,7 @@ h2{
   max-width: 25rem;
   text-align: center;
   font-style: oblique;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
 }
 .text blockquote footer {
@@ -271,7 +275,7 @@ h2{
   margin: 3rem 0;
 }
 .text figcaption {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
   margin-left: 85px;
   color: var(--color-text-grey);
 }
@@ -342,14 +346,14 @@ hr {
   height: 100%;
   object-fit: cover;
   border: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .img[data-contain] img {
   object-fit: contain;
 }
 .img-caption,
 .video-caption {
-  padding-top: .75rem;
+  margin-bottom: 50px;
   line-height: 1.5em;
   font-weight: 400;
   color: #afafaf;
@@ -466,6 +470,7 @@ header > h1{
   font-size: smaller;
 }
 
+
 .notes-content{
   padding: 3rem;
 }
@@ -534,6 +539,7 @@ header > h1{
   display: flex;
   gap: 3rem;
 }
+
 .column {
   flex: 1 1 0;
 }
