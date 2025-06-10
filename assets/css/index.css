@@ -146,7 +146,6 @@ p{
 h1, h2 {
   line-height: inherit;
   font-weight: 600;
-
 }
 
 h1{
@@ -252,6 +251,7 @@ h2{
   margin: 3rem;
   max-width: 25rem;
   text-align: center;
+  font-style: oblique;
 }
 .text blockquote footer {
   font-size: .875rem;
