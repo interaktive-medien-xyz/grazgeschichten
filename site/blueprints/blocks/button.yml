@@ -1,0 +1,38 @@
+name: Button
+icon: button
+preview: button
+
+fields:
+  text:
+    type: text
+    label: Button Text
+    required: true
+  target:
+    type: text
+    label: Scroll Target
+    help: ID of the element to scroll to (without "#")
+    placeholder: "section-1"
+  scrollOffset:
+    type: number
+    label: Scroll Offset
+    help: Additional offset in pixels (e.g. for fixed headers)
+    default: 0
+    min: 0
+    step: 10
+  scrollBehavior:
+    type: select
+    label: Scroll Behavior
+    default: smooth
+    options:
+      smooth: Smooth
+      instant: Instant
+  blockClass:
+    type: text
+    label: CSS Class
+    help: Add custom CSS classes
+    width: 1/2
+  blockId:
+    type: text
+    label: CSS ID
+    help: Add a unique identifier
+    width: 1/2 

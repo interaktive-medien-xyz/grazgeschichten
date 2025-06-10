@@ -1,0 +1,32 @@
+name: Accordion
+icon: list
+preview: accordion
+
+fields:
+  items:
+    type: structure
+    label: Accordion Items
+    fields:
+      title:
+        type: text
+        label: Title
+        required: true
+      image:
+        type: files
+        label: Image
+        multiple: false
+        accept: image/*
+      text:
+        type: textarea
+        label: Text
+        size: medium
+  blockClass:
+    type: text
+    label: CSS Class
+    help: Add custom CSS classes
+    width: 1/2
+  blockId:
+    type: text
+    label: CSS ID
+    help: Add a unique identifier
+    width: 1/2 

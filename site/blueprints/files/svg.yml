@@ -1,0 +1,44 @@
+# Each file blueprint must have a title, the title may be different from the file name
+title: SVG
+
+# Like page blueprints, file blueprints can define a layout with tabs, columns, sections and fields
+# File blueprints define what sort of information should get stored in a file's meta data file
+accept: 
+  type: image/svg+xml
+  extension: svg
+
+columns:
+  - width: 1/2
+    sections:
+      content:
+        type: fields
+        fields:
+          alt:
+            label: Alt-Text
+            type: text
+          caption:
+            label: Beschreibung
+            type: textarea
+            size: medium
+  - width: 1/2
+    sections:
+      meta:
+        type: fields
+        fields:
+          creator:
+            label: Ersteller
+            type: text
+            width: 2/3
+          license:
+            label: Lizenz
+            type: select
+            width: 1/3
+            options:
+              - CC0
+              - CC BY 4.0
+              - CC BY-SA 4.0
+              - CC BY-NC 4.0
+              - CC BY-ND 4.0
+          link:
+            label: Link
+            type: url 

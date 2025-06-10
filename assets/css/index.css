@@ -139,6 +139,10 @@ small {
   grid-auto-flow: dense;
 }
 
+p{
+  padding: 3%;
+}
+
 h1, h2 {
   line-height: inherit;
   font-weight: 600;
@@ -146,10 +150,12 @@ h1, h2 {
 
 h1{
   font-size: 3rem;
+  padding-left: 3%;
 }
 
 h2{
   font-size: 2rem;
+  padding-left: 3%;
 }
 
 .text {
@@ -238,11 +244,13 @@ h2{
 }
 .text blockquote {
   font-size: 1.25rem;
+  color: grey;
   line-height: 1.325em;
   /* border-left: 2px solid var(--color-black);
   padding-left: 1rem; */
-  margin: 3rem 0;
+  margin: 3rem;
   max-width: 25rem;
+  text-align: center;
   font-style: oblique;
 }
 .text blockquote footer {
@@ -438,6 +446,20 @@ header > h1{
   border: 1px solid red;
 } */
 
+.author{
+  font-family: serif;
+  color: var(--color-code-comment);
+  font-size: smaller;
+}
+
+.notes-content{
+  padding: 3rem;
+}
+
+.note-audio{
+  width: 100%;
+}
+
 
 @media screen and (min-width: 60rem) {
   /*
@@ -492,11 +514,11 @@ header > h1{
 
 /* Layout-Field Styles */
 .layout {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .columns {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 .column {
   flex: 1 1 0;
