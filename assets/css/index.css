@@ -150,16 +150,15 @@ h1, h2 {
 }
 
 h1{
-  font-size: 3rem;
-  padding-left: 3%;
+  font-size: 60px;
 }
 
 h2{
-  font-size: 2rem;
-  padding-left: 3%;
+  font-size: 32px;
 }
 
 .text {
+  font-size: 20px;
   line-height: 1.5em;
   font-weight: 400;
 }
@@ -244,18 +243,16 @@ h2{
   font-weight: 600;
 }
 .text blockquote {
-  font-size: 1.25rem;
-  color: grey;
+  font-size: 20px;
   line-height: 1.325em;
   /* border-left: 2px solid var(--color-black);
   padding-left: 1rem; */
   margin: 3rem;
   max-width: 25rem;
   text-align: center;
-  font-style: oblique;
 }
 .text blockquote footer {
-  font-size: .875rem;
+  font-size: 20px;
   font-style: italic;
 }
 .text figure {
@@ -338,6 +335,7 @@ hr {
 }
 .img-caption,
 .video-caption {
+  font-family: 17px;
   padding-top: .75rem;
   line-height: 1.5em;
 }
