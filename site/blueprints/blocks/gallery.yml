@@ -6,6 +6,8 @@ fields:
   gallery_items:
     type: structure
     label: Gallery Items
+    layout: cards
+    info: "{{ structureItem.image.toFile.dimensions }} - {{ structureItem.caption }}"
     fields:
       image:
         type: files
@@ -18,10 +20,11 @@ fields:
       caption:
         type: text
         label: Caption
+        placeholder: "Enter image caption..."
   columns:
     type: select
     label: Columns
-    default: 3
+    default: 2
     options:
       2: 2 Columns
       3: 3 Columns
