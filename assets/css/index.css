@@ -84,9 +84,7 @@ small {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* margin-right: -1rem;
-  margin-left: -1rem; */
-  /* margin-bottom: 6rem; */
+  padding: 90px 0px 50px 0px;
 }
 
 .logo {
@@ -142,6 +140,7 @@ small {
 
 p{
   padding: 3%;
+  padding-bottom: 100px;
 }
 
 h1, h2 {
@@ -152,11 +151,13 @@ h1, h2 {
 h1{
   font-size: 3rem;
   padding-left: 3%;
+  padding-bottom: 50px;
 }
 
 h2{
   font-size: 2rem;
   padding-left: 3%;
+  padding-bottom: 65px;
 }
 
 .text {
@@ -253,6 +254,7 @@ h2{
   max-width: 25rem;
   text-align: center;
   font-style: oblique;
+  padding-bottom: 50px;
 }
 .text blockquote footer {
   font-size: .875rem;
@@ -262,7 +264,7 @@ h2{
   margin: 3rem 0;
 }
 .text figcaption {
-  padding-top: .75rem;
+  padding: 0px 0px 100xp 0px;
   color: var(--color-text-grey);
 }
 .text figure ul {
@@ -332,6 +334,7 @@ hr {
   height: 100%;
   object-fit: cover;
   border: 0;
+  padding: 0px 0px 50px 0px;
 }
 .img[data-contain] img {
   object-fit: contain;
