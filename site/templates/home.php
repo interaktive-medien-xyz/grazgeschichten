@@ -23,6 +23,22 @@ $notes = page('notes')->children()->listed()->sortBy('date', 'desc');
 ?>
 
 <?php snippet('header') ?> 
+<<<<<<< Updated upstream
+=======
+<?php
+/*
+<header class="home-header">
+  <a href="<?= $site->url() ?>" class="logo">
+  <h1 class="logo-graz">GRAZ</h1>
+  <h1 class="logo-geschichten">GESCHICHTEN</h1>
+  </a>
+
+  <a class="about-link" href="">Über das Projekt</a>
+</header>
+
+*/
+?>
+>>>>>>> Stashed changes
 
 <div class="home-hero">
   <h1>GRAZGESCHICHTEN</h1>

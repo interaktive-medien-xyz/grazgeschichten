@@ -91,13 +91,13 @@ small {
   /* margin-bottom: 6rem; */
 }
 
-.logo {
+/*.logo {
   padding: 1rem;
   display: flex;
   align-items: center;
   font-weight: 600;
   cursor: pointer;
-}
+}*/
 
 .menu {
   display: flex;
@@ -444,13 +444,34 @@ header > h1{
   font-family: Victor Mono;
 }
 
+<<<<<<< Updated upstream
 .home-info{
   background-color: #019A48;
+=======
+.home-header{
+  font-size: 6vw;
+  padding: 1rem;
+  font-family: Victor Mono;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
+.home-info{
+  background-color: rgba(122, 175, 136, 1);
+>>>>>>> Stashed changes
   font-family: Victor Mono;
   width: 100vw;
   height: 100%;
   padding: 2rem;
+<<<<<<< Updated upstream
   color: white;
+=======
+  color: rgb(255, 255, 255);
+>>>>>>> Stashed changes
   display: flex;
   justify-content: space-between;
 }
@@ -471,18 +492,58 @@ header > h1{
 
 .home-daten > h2 {
   font-size: 1.5rem;
+<<<<<<< Updated upstream
   border-bottom: 1px solid white;
+=======
+>>>>>>> Stashed changes
   margin-bottom: 20px;
 }
 
 .home-subhead{
   font-size: 3rem;
   margin: 2rem;
+<<<<<<< Updated upstream
   margin-top: 4rem;
   border-bottom: #000 1px solid;
   font-family: Victor Mono;
 }
 
+=======
+  margin-top: 8rem;
+  font-family: Victor Mono;
+}
+
+.logo{
+  font-weight: lighter;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo-graz{
+  z-index: 6;
+  color: rgba(239, 63, 83, 1);
+  padding-bottom: 2rem;
+
+}
+
+.logo-geschichten{
+  position: absolute;
+  padding-left: 2rem;
+  z-index: 5;
+  color: #666;
+}
+
+.about-link{
+  font-size: 1.5rem;
+  z-index: 5;
+}
+
+.about-link:hover{
+  color: rgba(239, 63, 83, 1);
+}
+
+>>>>>>> Stashed changes
 .footer{
   margin-top: 10rem;
   width: 100vw;
