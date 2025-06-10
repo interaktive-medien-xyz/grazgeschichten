@@ -8,6 +8,10 @@
   line-height: 1;
 }
 
+.columns .columns--1 .column .column--12 .block-text {
+  margin: 0 240px 0 230px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -90,7 +94,7 @@ small {
 }
 
 .logo {
-  padding: 1rem;
+  margin-left: 85px;
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -99,6 +103,7 @@ small {
 
 .menu {
   display: flex;
+  margin-right: 65px;
 }
 .menu a {
   padding: 1rem;
@@ -151,18 +156,20 @@ h1, h2 {
 
 h1{
   font-size: 3rem;
-  padding-left: 3%;
+  padding-left: 85px;
 }
 
 h2{
   font-size: 2rem;
-  padding-left: 3%;
+  padding-left: 85px;
 }
 
 .text {
   line-height: 1.5em;
   font-weight: 400;
 }
+
+
 .text a {
   text-decoration: underline;
 }
@@ -257,6 +264,7 @@ h2{
 .text blockquote footer {
   font-size: .875rem;
   font-style: italic;
+  margin-left: 85px;
 }
 .text figure {
   margin: 3rem 0;
