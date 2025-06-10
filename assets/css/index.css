@@ -4,19 +4,19 @@
   font-style: normal;
 }
 
-.block-text{
-  line-height: 1;
-}
-.columns--1 .block-text p{
-  margin-right: 240px;
-  margin-left: 230px;
-}
 
 * {
   margin: 0;
   padding: 0;
 }
-
+.block-text{
+  line-height: 1;
+  padding-bottom: 100px;
+}
+.columns--1 .block-text p{
+  margin-right: 240px;
+  margin-left: 230px;
+}
 :root {
   --padding: 1.5rem;
   --color-black: #000;
@@ -83,7 +83,7 @@ small {
   color: var(--color-text-grey);
 }
 .block-author{
-  margin-bottom: 100px;
+  padding-bottom: 100px; /* margin geht hier iwi nicht*/
   margin-left: 85px;
   font-weight: 400;
   color: #afafaf;
@@ -149,7 +149,7 @@ small {
 }
 
 p{
-  padding-bottom: 100px;
+ /* padding-bottom: 100px;*/
 }
 
 h1, h2 {
