@@ -444,13 +444,19 @@ header > h1{
   font-family: Victor Mono;
 }
 
+.home-header{
+  font-size: 6vw;
+  padding: 1rem;
+  font-family: Victor Mono;
+}
+
 .home-info{
-  background-color: #019A48;
+  background-color: rgba(104, 143, 119, 1);
   font-family: Victor Mono;
   width: 100vw;
   height: 100%;
   padding: 2rem;
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
 }
@@ -461,8 +467,12 @@ header > h1{
 
 .home-about > h2 {
   font-size: 1.5rem;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(0, 0, 0);
   margin-bottom: 20px;
+}
+
+.home-about > p{
+  font-size: 1.25rem;
 }
 
 .home-daten{
@@ -471,7 +481,7 @@ header > h1{
 
 .home-daten > h2 {
   font-size: 1.5rem;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(0, 0, 0);
   margin-bottom: 20px;
 }
 
@@ -479,12 +489,27 @@ header > h1{
   font-size: 3rem;
   margin: 2rem;
   margin-top: 4rem;
-  border-bottom: #000 1px solid;
   font-family: Victor Mono;
 }
 
+.logo{
+  font-weight: lighter;
+}
+
+.logo-graz{
+  z-index: 6;
+  color: rgba(239, 63, 83, 1);
+}
+
+.logo-geschichten{
+  position: absolute;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  z-index: 5;
+  color: #666;
+}
+
 .footer{
-  margin-top: 10rem;
   width: 100vw;
   background: rgba(76, 76, 76, 0.7);
   padding: 2rem;
@@ -658,6 +683,8 @@ header > h1{
   display: grid;
   gap: 0.5rem;
   padding: 2rem;
+  /*background-color: rgba(104, 143, 119, 1);*/
+  padding-bottom: 10rem;
 }
 
 /* Homepage-spezifische Note-Grid Styles */
@@ -698,7 +725,7 @@ header > h1{
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgba(76, 76, 76, 0.7);
+  background: rgba(0, 0, 0);
   color: white;
   font-size: 1.5rem;
   transition: opacity 0.3s ease;
