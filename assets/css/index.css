@@ -51,6 +51,7 @@ body {
 }
 li {
   list-style: none;
+  margin-left: 3rem;
 }
 a {
   color: currentColor;
@@ -144,7 +145,7 @@ p{
 }
 
 h1, h2 {
-  line-height: inherit;
+  line-height: normal;
   font-weight: 600;
 }
 
