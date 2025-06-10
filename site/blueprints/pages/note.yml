@@ -58,6 +58,7 @@ columns:
           - map
           - gallery
           - image-slider
+          - scroll-slider
           - iframe
           - divider
           - author
