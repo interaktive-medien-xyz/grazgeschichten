@@ -37,11 +37,8 @@
     'assets/css/prism.css',
     'assets/css/lightbox.css',
     'assets/css/index.css',
-<<<<<<< Updated upstream
     'assets/css/styleLeon.css',
-=======
     'assets/css/stylesophie.css',
->>>>>>> Stashed changes
     '@auto'
   ]) ?>
 
