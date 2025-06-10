@@ -8,8 +8,9 @@
   line-height: 1;
 }
 
-.columns .columns--1 .column .column--12 .block-text {
-  margin: 0 240px 0 230px;
+.columns--1 .block-text p{
+  margin-right: 240px;
+  margin-left: 230px;
 }
 
 * {
@@ -270,6 +271,7 @@ h2{
 }
 .text figcaption {
   padding-bottom: 100px;
+  margin-left: 85px;
   color: var(--color-text-grey);
 }
 .text figure ul {
