@@ -183,18 +183,19 @@ h1, h2 {
 }
 
 h1{
-  font-size: 3rem;
   margin-left: 85px;
   margin-bottom: 50px;
+  font-size: 60px;
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 32px;
   margin-left: 85px;
   padding-bottom: 65px;
 }
 
 .text {
+  font-size: 20px;
   line-height: 1.5em;
   font-weight: 400;
 }
@@ -279,6 +280,8 @@ h2{
   font-weight: 600;
 }
 .text blockquote {
+  font-size: 20px;
+  line-height: 1.325em;
   /* border-left: 2px solid var(--color-black);
   padding-left: 1rem; */
   margin-left: 123px;
@@ -299,9 +302,11 @@ h2{
   font-size: 40px;
   line-height: 1.5em;
   margin: 0;
+  max-width: 25rem;
+  text-align: center;
 }
 .text blockquote footer {
-  font-size: .875rem;
+  font-size: 20px;
   font-style: italic;
   margin-top: 50px;
   margin-left: 85px;
@@ -391,6 +396,7 @@ hr {
 .img-caption,
 .video-caption {
   margin-bottom: 50px;
+  padding-top: .75rem;
   line-height: 1.5em;
   font-weight: 400;
   color: #afafaf;
@@ -506,7 +512,6 @@ header > h1{
   color: var(--color-code-comment);
   font-size: smaller;
 }
-
 
 .notes-content{
   padding: 3rem;
