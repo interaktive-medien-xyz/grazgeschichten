@@ -4,7 +4,7 @@
  */
 ?>
 
-<div class="block-iframe<?= $block->blockClass()->isNotEmpty() ? ' ' . $block->blockClass() : '' ?>"<?= $block->blockId()->isNotEmpty() ? ' id="' . $block->blockId() . '"' : '' ?> style="--aspect-ratio: <?= $block->ratio() ?>">
+<div class="block-iframe<?= $block->blockClass()->isNotEmpty() ? ' ' . $block->blockClass() : '' ?>"<?= $block->blockId()->isNotEmpty() ? ' id="' . $block->blockId() . '"' : '' ?>>
   <iframe
     src="<?= $block->url() ?>"
     height="<?= $block->height()->or(400) ?>"
@@ -12,7 +12,6 @@
     allow="<?= $block->allow() ?>"
     allowfullscreen
     loading="lazy"
-    style="width: 100%; height: 100%;"
   ></iframe>
 </div>
 

@@ -300,6 +300,7 @@ hr {
   --h: 1;
   padding-bottom: calc(100% / var(--w) * var(--h));
   background: var(--color-black);
+  margin: 3rem 0;
 }
 .img img,
 .video iframe {
@@ -320,8 +321,9 @@ hr {
 .video-caption {
   padding-top: .75rem;
   line-height: 1.5em;
+  color: var(--color-text-grey);
+  text-align: center;
 }
-
 
 .map {
   --w: 2;
@@ -643,20 +645,119 @@ header > h1{
 .columns {
   display: flex;
   gap: 2rem;
+  align-items: flex-start; /* Ensure columns align to top */
+  width: 100%;
 }
 .column {
   flex: 1 1 0;
+  min-height: 0; /* Allow columns to shrink */
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Allow flex items to shrink below content size */
+  width: 100%;
 }
+
+/* Ensure blocks within columns have proper spacing */
+.column > * {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.column > *:last-child {
+  margin-bottom: 0;
+}
+
 /* Spaltenverhältnisse für typische Layouts */
 .columns--2 .column--8 { flex: 2 1 0; }
 .columns--2 .column--4 { flex: 1 1 0; }
 .columns--2 .column--6 { flex: 1 1 0; }
 .columns--3 .column { flex: 1 1 0; }
 
+/* Fix for blocks with absolute positioning or padding-bottom */
+.column .block-video,
+.column .block-iframe,
+.column .block-image-slider,
+.column .block-scroll-slider,
+.column .block-map {
+  width: 100% !important;
+  position: relative;
+  flex-shrink: 0; /* Prevent shrinking */
+  min-width: 0; /* Allow flex items to shrink below content size */
+}
+
+/* Ensure proper height calculation for responsive blocks */
+.column .block-video .video-container,
+.column .block-iframe,
+.column .block-image-slider .image-slider-container,
+.column .block-scroll-slider .scroll-slider-container,
+.column .block-map .map-wrapper {
+  position: relative;
+  width: 100% !important;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  min-height: 200px; /* Minimum height to ensure visibility */
+}
+
+/* Specific fixes for different block types */
+.column .block-iframe {
+  width: 100% !important;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for iframes */
+  min-height: 200px;
+  display: block;
+}
+
+.column .block-video .video-container {
+  width: 100% !important;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for videos */
+  min-height: 200px;
+}
+
+.column .block-image-slider .image-slider-container {
+  width: 100% !important;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for image sliders */
+  min-height: 200px;
+}
+
+.column .block-scroll-slider .scroll-slider-container {
+  width: 100% !important;
+  height: 0;
+  padding-bottom: 56.7%; /* Original aspect ratio for scroll sliders */
+  min-height: 200px;
+}
+
+.column .block-map .map-wrapper {
+  width: 100% !important;
+  height: 500px; /* Fixed height for maps */
+  min-height: 300px;
+}
+
+/* Ensure iframes and videos are visible */
+.column .block-iframe iframe,
+.column .block-video .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100%;
+  border: 0;
+  min-height: 200px;
+}
+
 @media (max-width: 800px) {
   .columns {
     flex-direction: column;
     gap: 1rem;
+  }
+  
+  .column > * {
+    margin-bottom: 1.5rem;
+  }
+  
+  .column > *:last-child {
+    margin-bottom: 0;
   }
 
   .home-info{
@@ -1127,6 +1228,79 @@ header > h1{
   
   .gallery-item-caption {
     font-size: 0.8rem;
+  }
+}
+
+/* Video and Iframe Block Styles */
+.block-video,
+.block-iframe {
+  margin: 3rem 0 !important;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.block-video .video-container,
+.block-iframe {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio by default */
+  background: var(--color-black);
+  min-height: 200px;
+}
+
+.block-video .video-container iframe,
+.block-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  min-height: 200px;
+}
+
+.block-video .video-caption {
+  padding-top: 0.75rem;
+  line-height: 1.5em;
+  color: var(--color-text-grey);
+  text-align: center;
+}
+
+/* Responsive adjustments for video and iframe blocks */
+@media (max-width: 768px) {
+  .block-video,
+  .block-iframe {
+    margin: 2rem 0 !important;
+  }
+  
+  .block-video .video-container,
+  .block-iframe {
+    padding-bottom: 56.25% !important; /* Maintain aspect ratio on mobile */
+    min-height: 150px;
+  }
+  
+  .block-video .video-caption {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+  }
+}
+
+/* Ensure proper spacing between blocks */
+.block-video + .block-video,
+.block-video + .block-iframe,
+.block-iframe + .block-video,
+.block-iframe + .block-iframe {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .block-video + .block-video,
+  .block-video + .block-iframe,
+  .block-iframe + .block-video,
+  .block-iframe + .block-iframe {
+    margin-top: 1.5rem;
   }
 }
 
