@@ -10,7 +10,7 @@ Content: [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"Lorem ipsum dolo
 
 ----
 
-Cover: []
+Cover: - 'file://y0imcAoMCttvIX87'
 
 ----
 
