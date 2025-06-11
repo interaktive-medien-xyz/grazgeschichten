@@ -747,6 +747,8 @@ header > h1{
 }
 
 @media (max-width: 800px) {
+
+
   .columns {
     flex-direction: column;
     gap: 1rem;
@@ -915,6 +917,11 @@ header > h1{
 }
 
 @media screen and (max-width: 768px) {
+
+  .column{
+    padding: 0;
+  }
+
   .home .notes-grid {
     grid-template-columns: 1fr;
     padding: 1rem;
