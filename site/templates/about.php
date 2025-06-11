@@ -21,31 +21,90 @@
 */
 ?>
 <?php snippet('header') ?>
-<?php snippet('intro') ?>
-<?php snippet('layouts', ['field' => $page->layout()])  ?>
+<div class="spacer"></div>
 
-<aside class="contact">
-  <h2 class="h1">Get in contact</h2>
-  <div class="grid" style="--gutter: 1.5rem">
-    <section class="column text" style="--columns: 4">
-      <h3>Address</h3>
-      <?= $page->address() ?>
-    </section>
-    <section class="column text" style="--columns: 4">
-      <h3>Email</h3>
-      <p><?= Html::email($page->email()) ?></p>
-      <h3>Phone</h3>
-      <p><?= Html::tel($page->phone()) ?></p>
-    </section>
-    <section class="column text" style="--columns: 4">
-      <h3>On the web</h3>
-      <ul>
-        <?php foreach ($page->social()->toStructure() as $social): ?>
-        <li><?= Html::a($social->url(), $social->platform()) ?></li>
-        <?php endforeach ?>
-      </ul>
-    </section>
+<p class="about-text">
+  GRAZGESCHICHTEN ist das Ergebnis eines gemeinsamen Projekts der FH Joanneum und der Ostfalia Hochschule. Eine Woche lang hatten die Studierenden aus Österreich und Deutschland Zeit, Wege und Perspektiven zu entwickeln, um Graz neu zu erzählen. Die Website versammelt elf eigenständige Beiträge, die einen neuen und erfrischenden Blick auf die Stadt mit den roten Dächern werfen.
+  <br><br>
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+</p>
+<main>
+<img class="gruppenfoto"src="https://froh.ngo/wp-content/uploads/2022/09/DSC_7404.jpg">
+<p class="text">
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+</p>
+<p>Team<br><br></p>
+<div class="namen">
+  <div class="studierende">
+    <p>Studierende:<br>
+      Prof. Klaus Neuburg<br>
+      Moritz Winkler<br>
+      Andreas Kölmel<br>
+      Tonio Vakalopoulus<br>
+      Prof. Wolfgang Graz<br>
+      Prof. Günni Graz<br>
+      Prof. Klaus Neuburg<br>
+      Moritz Winkler</p>
   </div>
-</aside>
+  <div class="studierende">
+    <p>Prof. Klaus Neuburg<br>
+      Moritz Winkler<br>
+      Andreas Kölmel<br>
+      Tonio Vakalopoulus<br>
+      Prof. Wolfgang Graz<br>
+      Prof. Günni Graz<br>
+      Prof. Klaus Neuburg<br>
+      Moritz Winkler<br>
+      Prof. Günni Graz</p>
+      </div>
+    <div class="studierende">
+    <p>Lehrende:<br>
+      Prof. Klaus Neuburg<br>
+      Moritz Winkler<br>
+      Andreas Kölmel<br>
+      Tonio Vakalopoulus<br>
+      Prof. Wolfgang Graz<br>
+      Prof. Günni Graz<br>
+    </p>
+  </div>
+  </div>
+</div>
+<div class="namen-mobil">
+  <section>
+    <p>
+      Studierende:<br>
+      Prof. Klaus Neuburg<br>
+      Moritz Winkler<br>
+      Andreas Kölmel<br>
+      Tonio Vakalopoulus<br>
+      Prof. Wolfgang Graz<br>
+      Prof. Günni Graz<br>
+      Prof. Klaus Neuburg<br>
+      Moritz Winkler<br>
+      Prof. Klaus Neuburg<br>
+      Moritz Winkler<br>
+      Andreas Kölmel<br>
+      Tonio Vakalopoulus<br>
+      Prof. Wolfgang Graz<br>
+      Prof. Günni Graz<br>
+      Prof. Klaus Neuburg<br>
+      Moritz Winkler<br>
+      Prof. Günni Graz<br>
+    </p>
+  </section>
+  <section>
+    <p>
+      Lehrende:<br>
+      Prof. Klaus Neuburg<br>
+      Moritz Winkler<br>
+      Andreas Kölmel<br>
+      Tonio Vakalopoulus<br>
+      Prof. Wolfgang Graz<br>
+      Prof. Günni Graz<br>
+    </p>
+  </section>
+</div>
+</main>
+
 
 <?php snippet('footer') ?>
