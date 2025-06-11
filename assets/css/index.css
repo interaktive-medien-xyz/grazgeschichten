@@ -4,7 +4,6 @@
   font-style: normal;
 }
 
-
 .gallery-grid{
   display: flex;
   flex-direction: row;
@@ -24,20 +23,20 @@
   box-sizing: border-box;
 }
 .block-image{
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 .block-text{
   line-height: 1;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 .block-video{
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 .audio-block{
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 .video-container{
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .columns--1 .block-text p{
   margin-right: 240px;
@@ -123,21 +122,21 @@ small {
   color: var(--color-text-grey);
 }
 .block-author{
-  padding-bottom: 100px; /* margin geht hier iwi nicht*/
+  padding-bottom: 75px; /* margin geht hier iwi nicht*/
   margin-left: 85px;
   font-weight: 400;
   color: #afafaf;
 }
 .block-button{
   margin-left: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 50px 0 50px 0;
+  margin: 50px 0 25px 0;
 }
 
 .logo {
@@ -173,7 +172,7 @@ small {
 }
 .note-subheading{
   margin-left: 85px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   line-height: normal;
   font-weight: 600;
   font-size: 32px;
@@ -206,17 +205,16 @@ h1, h2 {
 
 h1{
   padding-left: 85px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-size: 60px;
-  padding-top: 50px;
+  padding-top: 75px;
 }
-
-
 
 h2{
   font-size: 32px;
   padding-left: 85px;
-  padding-bottom: 65px;
+  padding-bottom: 40px;
+  padding-top: 25px;
 }
 
 .text {
@@ -227,13 +225,7 @@ h2{
 .text a {
   text-decoration: underline;
 }
-/*
-.text :first-child {
-  margin-top: 0;
-}
-.text :last-child {
-  margin-bottom: 0;
-} */
+
 .text p,
 .text ul,
 .text ol {
@@ -305,15 +297,15 @@ h2{
 .text dt {
   font-weight: 600;
 }
+
 .text blockquote {
   font-size: 20px;
   line-height: 1.325em;
   padding-left: 123px;
   padding-right: 240px;
   font-style: oblique;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   font-weight: 700;
-
 }
 
 .columns--1{
@@ -340,7 +332,7 @@ h2{
 
 .text figcaption {
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
   margin-left: 85px;
 }
 .text figure ul {
@@ -457,7 +449,6 @@ hr {
   color: var(--color-text);
 }
 
-
 .map {
   --w: 2;
   --h: 1;
@@ -466,6 +457,7 @@ hr {
   overflow: hidden;
   background: var(--color-black);
 }
+
 .map iframe {
   position: absolute;
   top: 0;
@@ -529,11 +521,6 @@ header > h1{
   width: 20px;
 }
 
-
-/* .blog-prevnext{
-  border: 1px solid red;
-} */
-
 .author{
   font-family: serif;
   color: var(--color-code-comment);
@@ -547,7 +534,6 @@ header > h1{
 .note-audio{
   width: 100%;
 }
-
 
 @media screen and (min-width: 60rem) {
   /*
