@@ -22,9 +22,15 @@
 .Hintergrund-dunkelGrün{
   background-color: #3d6d55;
   color: #FBFBF9;
-  padding: 5%;
   height: 100%;
 }
+
+.Hintergrund-dunkelGrün p{
+  background-color: #3d6d55;
+  color: #FBFBF9;
+  padding: 5%;
+}
+
 
 .Hintergrund-sehrDunkelGrün{
   background-color: #1e4034;

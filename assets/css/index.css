@@ -186,20 +186,21 @@ small {
 h1, h2 {
   line-height: normal;
   font-weight: 600;
-  margin-right: 50px;
+  padding-right: 50px;
 }
 
 h1{
-  margin-left: 85px;
+  padding-left: 85px;
   margin-bottom: 50px;
   font-size: 60px;
+  padding-top: 50px;
 }
 
 
 
 h2{
   font-size: 32px;
-  margin-left: 85px;
+  padding-left: 85px;
   padding-bottom: 65px;
 }
 
@@ -292,12 +293,10 @@ h2{
 .text blockquote {
   font-size: 20px;
   line-height: 1.325em;
-  /* border-left: 2px solid var(--color-black);
-  padding-left: 1rem; */
-  margin-left: 123px;
-  margin-right: 240px;
+  padding-left: 123px;
+  padding-right: 240px;
   font-style: oblique;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   font-weight: 700;
 
 }
@@ -319,9 +318,7 @@ h2{
   margin-top: 50px;
   color: #afafaf;
 }
-.text figure {
-  margin: 3rem 0;
-}
+
 .text figcaption {
   margin-top: 50px;
   margin-bottom: 100px;
@@ -586,14 +583,12 @@ header > h1{
 }
 .columns {
   display: flex;
-  gap: 3rem;
   align-items: stretch;
   height: 100%;
 }
 
 .column {
   flex: 1 1 0;
-  height: 100%;
 }
 /* Spaltenverhältnisse für typische Layouts */
 .columns--2 .column--8 { flex: 2 1 0; }
