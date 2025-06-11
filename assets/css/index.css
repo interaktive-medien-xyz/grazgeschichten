@@ -444,7 +444,7 @@ header > h1{
   font-family: Victor Mono;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   z-index: 5;
   width: 100%;
 
