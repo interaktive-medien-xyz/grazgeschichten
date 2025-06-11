@@ -2,6 +2,17 @@
   background-color: #FBFBF9;
   color: #2C372F;
   height: 100%;
+}
+
+.Hintergrund-weiß img{
+  background-color: #FBFBF9;
+  color: #2C372F;
+  padding: 70px 20px 0 20px;
+}
+
+.Hintergrund-weiß p{
+  background-color: #FBFBF9;
+  color: #2C372F;
   padding: 5%;
 }
 
@@ -9,14 +20,36 @@
   background-color: #9BB8A2;
   color: #2C372F;
   height: 100%;
+}
+
+.Hintergrund-hellGrün img{
+  background-color: #9BB8A2;
+  color: #2C372F;
+  padding: 70px 20px 0 20px;
+}
+
+.Hintergrund-hellGrün p{
+  background-color: #9BB8A2;
+  color: #2C372F;
   padding: 5%;
 }
 
 .Hintergrund-mittelGrün{
   background-color: #688f77;
   color: #2C372F;
-  padding: 5%;
   height: 100%;
+}
+
+.Hintergrund-mittelGrün img{
+  background-color: #688f77;
+  color: #2C372F;
+  padding: 70px 20px 0 20px;
+}
+
+.Hintergrund-mittelGrün p{
+  background-color: #688f77;
+  color: #2C372F;
+  padding: 5%;
 }
 
 .Hintergrund-dunkelGrün{
@@ -25,17 +58,33 @@
   height: 100%;
 }
 
+.Hintergrund-dunkelGrün img{
+  background-color: #3d6d55;
+  color: #FBFBF9;
+  padding: 70px 20px 0 20px;
+}
+
 .Hintergrund-dunkelGrün p{
   background-color: #3d6d55;
   color: #FBFBF9;
   padding: 5%;
 }
 
-
 .Hintergrund-sehrDunkelGrün{
   background-color: #1e4034;
   color: #FBFBF9;
   height: 100%;
+}
+
+.Hintergrund-sehrDunkelGrün img{
+  background-color: #1e4034;
+  color: #FBFBF9;
+  padding: 70px 20px 0 20px;
+}
+
+.Hintergrund-sehrDunkelGrün p{
+  background-color: #1e4034;
+  color: #FBFBF9;
   padding: 5%;
 }
 
@@ -58,3 +107,23 @@
 .foto-textbreit .img-caption{
   margin-left: 0;
 }
+
+.columns--1 .video-full .video{
+  height: 100vh;
+  width: 100vw;
+}
+
+.columns--1 .video{
+  height: 100vh;
+}
+
+.video-halb-full{
+  width: 85%;
+  padding-left: 230px;
+}
+
+.video-halb{
+  width: 85%;
+}
+
+

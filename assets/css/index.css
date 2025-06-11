@@ -11,6 +11,7 @@
   gap: 1rem;
   padding-left: 127.5px;
   padding-right: 128px;
+  padding-bottom: 5%;
 }
 
 .block-gallery .gallery-caption{
@@ -42,6 +43,20 @@
   margin-right: 240px;
   margin-left: 230px;
 }
+
+.columns--2 .block-quote{
+  padding-right: 140px;
+}
+
+
+
+/*
+.columns--1 .block-video{
+  height: 100vh;
+  width: 100%;
+}
+
+ */
 :root {
   --padding: 1.5rem;
   --color-black: #000;
@@ -301,6 +316,10 @@ h2{
 
 }
 
+.columns--1{
+  overflow: hidden;
+}
+
 .map-description{
   margin: 0;
   padding-left: 85px;
@@ -323,7 +342,6 @@ h2{
   margin-top: 50px;
   margin-bottom: 100px;
   margin-left: 85px;
-  color: var(--color-text-grey);
 }
 .text figure ul {
   line-height: 0;
@@ -372,13 +390,18 @@ hr {
   outline: 2px solid var(--color-light);
 }
 
-.video,
 .img {
   position: relative;
   display: block;
   --w: 1;
   --h: 1;
   padding-bottom: calc(100% / var(--w) * var(--h));
+  background: var(--color-black);
+}
+
+.video {
+  position: relative;
+  display: block;
   background: var(--color-black);
 }
 .img img,
@@ -394,6 +417,7 @@ hr {
   border: 0;
   margin-bottom: 50px;
 }
+
 .img[data-contain] img {
   object-fit: contain;
 }
@@ -403,7 +427,6 @@ hr {
   padding-top: .75rem;
   line-height: 1.5em;
   font-weight: 400;
-  color: #afafaf;
 }
 
 .footer {
