@@ -568,7 +568,7 @@ header > h1{
 
 /* Layout-Field Styles */
 .layout {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .columns {
   display: flex;
