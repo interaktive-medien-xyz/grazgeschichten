@@ -56,11 +56,17 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function showSlide(index) {
       // Hide all slides
-      slides.forEach(slide => slide.classList.remove('active'));
+      slides.forEach(slide => {
+        slide.classList.remove('active');
+        slide.style.visibility = 'hidden';
+        slide.style.opacity = '0';
+      });
       dots.forEach(dot => dot.classList.remove('active'));
       
       // Show current slide
       slides[index].classList.add('active');
+      slides[index].style.visibility = 'visible';
+      slides[index].style.opacity = '1';
       dots[index].classList.add('active');
       
       currentSlide = index;
@@ -74,6 +80,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function prevSlide() {
       const prev = (currentSlide - 1 + totalSlides) % totalSlides;
       showSlide(prev);
+    }
+    
+    // Initialize first slide immediately
+    if (slides.length > 0) {
+      showSlide(0);
     }
     
     // Event listeners

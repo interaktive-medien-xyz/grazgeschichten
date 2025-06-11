@@ -418,18 +418,18 @@ header > h1{
 .home-hero{
   width: 100vw;
   height: 80vh;
-  background-image: url(../images/city-3281607_1920.webp);
+  background-image: url(../images/hero-main.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: grayscale(100%); /* Current draft standard */
-    -webkit-filter: grayscale(100%); /* New WebKit */
+  /* filter: grayscale(100%); 
+    -webkit-filter: grayscale(100%); 
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%); 
-    -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */ 
-    filter: url(resources.svg#desaturate); /* Gecko */
-    filter: gray; /* IE */
-    -webkit-filter: grayscale(1); /* Old WebKit */
+    -o-filter: grayscale(100%);
+    filter: url(resources.svg#desaturate); 
+    filter: gray; 
+    -webkit-filter: grayscale(1); */
 }
 
 .home-hero > h1{
@@ -444,9 +444,10 @@ header > h1{
   font-family: Victor Mono;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   z-index: 5;
   width: 100%;
+
 }
 
 .home-info{
@@ -501,14 +502,14 @@ header > h1{
 .logo-graz{
   z-index: 6;
   color: rgba(239, 63, 83, 1);
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .logo-geschichten{
   position: absolute;
-  padding-left: 3rem;
+  padding-left: 1rem;
   z-index: 5;
-  color: #666;
+  color: rgba(203, 213, 205, 1);
 }
 
 .footer{
@@ -959,16 +960,30 @@ header > h1{
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden; /* Hide by default */
 }
 
 .image-slide.active {
   opacity: 1;
+  visibility: visible; /* Show when active */
 }
 
 .image-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block; /* Ensure proper display */
+}
+
+/* Ensure first image is immediately visible */
+.image-slide:first-child {
+  visibility: visible;
+  opacity: 1;
+}
+
+.image-slide:first-child.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .image-slider-nav {

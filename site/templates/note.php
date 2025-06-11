@@ -37,6 +37,8 @@
 <?php endif ?>
 
 <article class="note">
+
+<?php /*
   <header class="note-header h1">
 
     <?php if ($page->author()->isNotEmpty()): ?>
@@ -49,6 +51,8 @@
         </p>
     <?php endif ?>
 <?php endif ?>
+
+*/ ?>
 
   </header>
   

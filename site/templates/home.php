@@ -57,11 +57,11 @@ $notes = page('notes')->children()->listed()->sortBy('date', 'desc');
     <p>GRAZGESCHICHTEN ist das Ergebnis eines gemeinsamen Projekts der FH Joanneum und der Ostfalia Hochschule. Eine Woche lang hatten die Studierenden aus Österreich und Deutschland Zeit, Wege und Perspektiven zu entwickeln, um Graz neu zu erzählen.
     Die Website versammelt elf eigenständige Beiträge, die einen neuen und erfrischenden Blick auf die Stadt mit den roten Dächern werfen.</p>
   </div>
-  <div class="home-daten">
+ <!-- <div class="home-daten">
   <p>47° 4' 0.12 N 15° 25' 59.88 E <br>
   RESIDENTS: 302.479 <br>
   ALTITUDE: 353m</p>
-  </div>
+  </div> -->
 </section>
 
 
