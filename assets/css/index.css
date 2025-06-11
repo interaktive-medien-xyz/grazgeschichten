@@ -152,7 +152,7 @@ small {
 .section {
   padding: 3rem 0;
 }
-.node-subheading{
+.note-subheading p{
   margin-left: 85px;
 }
 .grid {
