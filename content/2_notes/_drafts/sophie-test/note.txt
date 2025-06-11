@@ -2,7 +2,11 @@ Title: Sophie Test
 
 ----
 
-Content: 
+Subheading: 
+
+----
+
+Content: [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"Hallo WELT","level":"h1","blockclass":"h1","blockid":""},"id":"d4b1b93b-f9a6-49d2-8cb4-e8a6ac7a4c5e","isHidden":false,"type":"heading"}],"id":"77ade0c2-04cc-4503-877e-ea8f48618990","width":"1/1"}],"id":"fd289a88-b7ba-496f-8c09-168ea857a8d4"},{"attrs":[],"columns":[{"blocks":[{"content":{"text":"Das ist h2!!","level":"h2","blockclass":"h2","blockid":""},"id":"11e01d33-b445-4509-8dff-742f3f68d840","isHidden":false,"type":"heading"}],"id":"001959ec-ce64-4f4f-a680-816f97658438","width":"1/1"}],"id":"a6707e9c-17cd-4b53-a4ec-a93add5fb02f"},{"attrs":[],"columns":[{"blocks":[{"content":{"location":"local","image":[],"src":"","alt":"","caption":"Hallo dies ist ein test","ratio":"auto","crop":"true","link":"","blockclass":"","blockid":""},"id":"139b5a72-ea9e-4745-9373-c51d24a0848c","isHidden":false,"type":"image"}],"id":"b1588836-e755-49ed-82eb-6b18755e13fd","width":"1/2"},{"blocks":[{"content":{"text":"<p>Hallo meine lieben hehe</p>","citation":"","blockclass":"","blockid":""},"id":"3a598551-c850-43aa-b6c1-803184eb0fa6","isHidden":false,"type":"quote"}],"id":"8f588607-a6a1-49a5-a709-ce81d2690871","width":"1/2"}],"id":"cf197f94-b86c-40b3-802c-7c118a5d48be"}]
 
 ----
 
