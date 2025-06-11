@@ -152,7 +152,9 @@ small {
 .section {
   padding: 3rem 0;
 }
-
+.node-subheading{
+  margin-left: 85px;
+}
 .grid {
   --columns: 12;
   --gutter: 3rem;
@@ -575,7 +577,7 @@ header > h1{
 
 /* Layout-Field Styles */
 .layout {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .columns {
   display: flex;
