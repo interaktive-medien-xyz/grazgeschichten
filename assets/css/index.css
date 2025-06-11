@@ -152,7 +152,9 @@ small {
 .section {
   padding: 3rem 0;
 }
-
+.node-subheading{
+  margin-left: 85px;
+}
 .grid {
   --columns: 12;
   --gutter: 3rem;
