@@ -36,7 +36,8 @@ $notes = page('notes')->children()->listed()->sortBy('date', 'desc');
 
 */
 ?>
-
+<?php
+/*
 <header class="home-header">
   <a href="<?= $site->url() ?>" class="logo">
   <h1 class="logo-graz">GRAZ</h1>
@@ -45,6 +46,8 @@ $notes = page('notes')->children()->listed()->sortBy('date', 'desc');
 
   <a href="">Über das Projekt</a>
 </header>
+*/
+?>
 
 <div class="home-hero">
 </div>

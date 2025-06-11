@@ -60,7 +60,7 @@ columns:
           - image-slider
           - scroll-slider
           - iframe
-          - divider
+          # - divider
           - author
           - type: audio
             name: Audio

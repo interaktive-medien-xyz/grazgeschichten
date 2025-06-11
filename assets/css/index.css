@@ -580,6 +580,12 @@ header > h1{
   color: rgba(239, 63, 83, 1);
 }
 
+.spacer{
+  width: 100vw;
+  height: 15vh;
+  z-index: 5;
+}
+
 @media screen and (min-width: 60rem) {
   body {
     --padding: 3rem;
@@ -963,7 +969,6 @@ header > h1{
   /* Ensure the slider is contained within its parent */
   overflow: hidden;
   position: relative;
-  background-color: red;
 }
 
 .scroll-slider-container {

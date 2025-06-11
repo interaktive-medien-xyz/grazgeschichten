@@ -7,28 +7,20 @@
 $svg = $block->svg()->toFile();
 if (!$svg) return;
 
-// Define size classes
-$sizeClass = match($block->size()->or('medium')) {
-  'small' => 'map-small',
-  'large' => 'map-large',
-  'full' => 'map-full',
-  default => 'map-medium'
-};
+// Fixed size class - no longer configurable
+$sizeClass = 'map-medium';
 
-// Combine all classes
-$classes = ['block-map', $sizeClass];
+// Generate unique ID for this map block
+$mapId = $block->blockId()->isNotEmpty() ? $block->blockId()->value() : 'map-' . uniqid();
+
+// Combine all classes - always interactive and zoomable by default
+$classes = ['block-map', $sizeClass, 'is-interactive', 'is-zoomable'];
 if ($block->blockClass()->isNotEmpty()) {
   $classes[] = $block->blockClass()->value();
 }
-if ($block->interactive()->isTrue()) {
-  $classes[] = 'is-interactive';
-}
-if ($block->zoom()->isTrue()) {
-  $classes[] = 'is-zoomable';
-}
 ?>
 
-<figure class="<?= implode(' ', $classes) ?>"<?= $block->blockId()->isNotEmpty() ? ' id="' . $block->blockId() . '"' : '' ?>>
+<figure class="<?= implode(' ', $classes) ?>" id="<?= $mapId ?>">
   <?php if ($block->title()->isNotEmpty()): ?>
   <h3 class="map-title"><?= $block->title() ?></h3>
   <?php endif ?>
@@ -139,10 +131,11 @@ if ($block->zoom()->isTrue()) {
 }
 </style>
 
-<?php if ($block->interactive()->isTrue() || $block->zoom()->isTrue()): ?>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const map = document.querySelector('<?= $block->blockId()->isNotEmpty() ? "#" . $block->blockId() : ".block-map" ?>');
+  const map = document.getElementById('<?= $mapId ?>');
+  if (!map) return;
+  
   const container = map.querySelector('.map-container');
   let isDragging = false;
   let startX, startY, scrollLeft, scrollTop;
@@ -181,7 +174,6 @@ document.addEventListener('DOMContentLoaded', function() {
     container.parentElement.scrollTop = scrollTop - moveY;
   });
 
-  <?php if ($block->interactive()->isTrue()): ?>
   // Interaktive Elemente
   map.querySelectorAll('[data-interactive]').forEach(element => {
     element.addEventListener('click', function(e) {
@@ -193,9 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-  <?php endif ?>
   
-  <?php if ($block->zoom()->isTrue()): ?>
   // Zoom-Funktionalität mit Mausrad
   container.addEventListener('wheel', function(e) {
     e.preventDefault();
@@ -207,7 +197,5 @@ document.addEventListener('DOMContentLoaded', function() {
     
     svg.style.transform = `scale(${newScale})`;
   });
-  <?php endif ?>
 });
-</script>
-<?php endif ?> 
+</script> 
