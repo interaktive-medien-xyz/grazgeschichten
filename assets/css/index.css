@@ -152,8 +152,12 @@ small {
 .section {
   padding: 3rem 0;
 }
-.note-subheading p{
+.note-subheading{
   margin-left: 85px;
+  margin-bottom: 50px;
+  line-height: normal;
+  font-weight: 600;
+  font-size: 32px;
 }
 .grid {
   --columns: 12;
