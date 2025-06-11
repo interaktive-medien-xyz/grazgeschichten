@@ -113,6 +113,10 @@ small {
   font-weight: 400;
   color: #afafaf;
 }
+.block-button{
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
 .header {
   position: relative;
   display: flex;
@@ -152,7 +156,13 @@ small {
 .section {
   padding: 3rem 0;
 }
-
+.note-subheading{
+  margin-left: 85px;
+  margin-bottom: 50px;
+  line-height: normal;
+  font-weight: 600;
+  font-size: 32px;
+}
 .grid {
   --columns: 12;
   --gutter: 3rem;
