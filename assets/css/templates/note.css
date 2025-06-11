@@ -84,6 +84,8 @@
 
 /* Responsive Anpassungen */
 @media screen and (max-width: 768px) {
+
+
   .columns {
     flex-direction: column;
   }
@@ -91,6 +93,14 @@
   .column {
     flex: 0 0 100% !important;
     max-width: 100% !important;
+  }
+
+  .column{
+    padding: 0;
+  }
+
+  .columns {
+    margin: 0;
   }
 }
 
