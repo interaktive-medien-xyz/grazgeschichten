@@ -200,12 +200,13 @@ h2{
 .text a {
   text-decoration: underline;
 }
+/*
 .text :first-child {
   margin-top: 0;
 }
 .text :last-child {
   margin-bottom: 0;
-}
+} */
 .text p,
 .text ul,
 .text ol {
