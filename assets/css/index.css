@@ -584,10 +584,13 @@ header > h1{
 .columns {
   display: flex;
   gap: 3rem;
+  align-items: stretch;
+  height: 100%;
 }
 
 .column {
   flex: 1 1 0;
+  height: 100%;
 }
 /* Spaltenverhältnisse für typische Layouts */
 .columns--2 .column--8 { flex: 2 1 0; }
