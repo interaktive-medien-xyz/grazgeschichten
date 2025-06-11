@@ -25,6 +25,11 @@
 
 <div class="spacer"></div>
 
+<h1 class="note-title"><?= $page->title()->esc() ?></h1>
+<?php if ($page->subheading()->isNotEmpty()): ?>
+  <p class="note-subheading"><small><?= $page->subheading()->esc() ?></small></p>
+<?php endif ?>
+
 <?php if ($cover = $page->cover()): ?>
   <a href="<?= $cover->url() ?>" data-lightbox class="img hero" style="--w:2; --h:1">
     <img src="<?= $cover->crop(1200, 600)->url() ?>" alt="<?= $cover->alt()->esc() ?>">
@@ -33,10 +38,6 @@
 
 <article class="note">
   <header class="note-header h1">
-    <h1 class="note-title"><?= $page->title()->esc() ?></h1>
-    <?php if ($page->subheading()->isNotEmpty()): ?>
-      <p class="note-subheading"><small><?= $page->subheading()->esc() ?></small></p>
-    <?php endif ?>
 
     <?php if ($page->author()->isNotEmpty()): ?>
     <?php $authors = $page->author()->toUsers(); ?>
