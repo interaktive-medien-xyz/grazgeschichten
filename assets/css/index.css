@@ -297,7 +297,7 @@ hr {
   position: relative;
   display: block;
   --w: 1;
-  --h: 1;
+  --h: 0.56;
   padding-bottom: calc(100% / var(--w) * var(--h));
   background: var(--color-black);
   margin: 3rem 0;
@@ -745,6 +745,8 @@ header > h1{
   height: 100%;
   border: 0;
   min-height: 200px;
+  object-fit: contain; /* Show full video without cropping */
+  background: var(--color-black);
 }
 
 @media (max-width: 800px) {
@@ -1009,17 +1011,18 @@ header > h1{
 .image-slider-next {
   width: 3rem;
   height: 3rem;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(224, 224, 224, 0.7);
   color: white;
   border: none;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
   pointer-events: auto;
+  font-family: Victor Mono;
 }
 
 .image-slider-prev:hover,
@@ -1281,6 +1284,13 @@ header > h1{
   height: 100%;
   border: 0;
   min-height: 200px;
+  object-fit: contain; /* Show full video without cropping */
+}
+
+/* Specific video styling to prevent cropping */
+.block-video .video-container iframe {
+  object-fit: contain;
+  background: var(--color-black);
 }
 
 .block-video .video-caption {
