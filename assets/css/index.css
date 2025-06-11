@@ -113,6 +113,10 @@ small {
   font-weight: 400;
   color: #afafaf;
 }
+.block-button{
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
 .header {
   position: relative;
   display: flex;
