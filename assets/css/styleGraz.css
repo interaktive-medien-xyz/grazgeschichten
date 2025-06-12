@@ -1,0 +1,169 @@
+.Hintergrund-weiß{
+  background-color: #FBFBF9;
+  color: #2C372F;
+  height: 100%;
+  overflow-wrap: break-word;
+  padding-top: 25px;
+}
+
+.Hintergrund-weiß audio{
+  background-color: #FBFBF9;
+  color: #2C372F;
+  margin: 25px 0 0 0;
+}
+
+.Hintergrund-weiß img{
+  background-color: #FBFBF9;
+  color: #2C372F;
+  padding: 0 20px 0 20px;
+}
+
+.Hintergrund-weiß p{
+  background-color: #FBFBF9;
+  color: #2C372F;
+  padding: 0 5% 0 5%;
+}
+
+.Hintergrund-hellGrün{
+  background-color: #9BB8A2;
+  color: #2C372F;
+  height: 100%;
+  overflow-wrap: break-word;
+  padding-top: 25px;
+}
+
+.Hintergrund-hellGrün audio{
+  background-color: #9BB8A2;
+  color: #2C372F;
+  margin: 25px 0 0 0;
+}
+
+.Hintergrund-hellGrün img{
+  background-color: #9BB8A2;
+  color: #2C372F;
+  padding: 0 20px 0 20px;
+}
+
+.Hintergrund-hellGrün p{
+  background-color: #9BB8A2;
+  color: #2C372F;
+  padding: 0 5% 0 5%;
+}
+
+.Hintergrund-mittelGrün{
+  background-color: #688f77;
+  color: #2C372F;
+  height: 100%;
+  overflow-wrap: break-word;
+  padding-top: 25px;
+}
+
+.Hintergrund-mittelGrün audio{
+  background-color: #688f77;
+  color: #2C372F;
+  margin: 25px 0 0 0;
+}
+
+.Hintergrund-mittelGrün img{
+  background-color: #688f77;
+  color: #2C372F;
+  padding: 0 20px 0 20px;
+}
+
+.Hintergrund-mittelGrün p{
+  background-color: #688f77;
+  color: #2C372F;
+  padding: 0 5% 0 5%;
+}
+
+.Hintergrund-dunkelGrün{
+  background-color: #3d6d55;
+  color: #FBFBF9;
+  height: 100%;
+  overflow-wrap: break-word;
+  padding-top: 25px;
+}
+
+.Hintergrund-dunkelGrün audio{
+  background-color: #3d6d55;
+  color: #FBFBF9;
+  margin: 25px 0 0 0;
+}
+
+.Hintergrund-dunkelGrün img{
+  background-color: #3d6d55;
+  color: #FBFBF9;
+  padding: 0 20px 0 20px;
+}
+
+.Hintergrund-dunkelGrün p{
+  background-color: #3d6d55;
+  color: #FBFBF9;
+  padding: 0 5% 0 5%;
+}
+
+.Hintergrund-sehrDunkelGrün{
+  background-color: #1e4034;
+  color: #FBFBF9;
+  height: 100%;
+  overflow-wrap: break-word;
+  padding-top: 25px;
+}
+
+.Hintergrund-sehrDunkelGrün audio{
+  background-color: #1e4034;
+  color: #FBFBF9;
+  margin: 25px 0 0 0;
+}
+
+.Hintergrund-sehrDunkelGrün img{
+  background-color: #1e4034;
+  color: #FBFBF9;
+  padding: 0 20px 0 20px;
+}
+
+.Hintergrund-sehrDunkelGrün p{
+  background-color: #1e4034;
+  color: #FBFBF9;
+  padding: 0 5% 0 5%;
+}
+
+.lead{
+  margin-left: 70px;
+  font-weight: 700;
+  font-size: 25px
+}
+
+.audio-element{
+  padding-left: 443px;
+  padding-right: 442px;
+}
+
+.foto-textbreit{
+  padding-left: 230px;
+  padding-right: 240px;
+}
+
+.foto-textbreit .img-caption{
+  margin-left: 0;
+}
+
+.columns--1 .video-full .video{
+  height: 100vh;
+  width: 100vw;
+}
+
+.columns--1 .video{
+  height: 100vh;
+}
+
+.video-halb-full{
+  width: 85%;
+  padding-left: 230px;
+}
+
+.video-halb{
+  width: 85%;
+}
+
+

@@ -1,11 +1,20 @@
 @font-face {
-  font-family: "Necto Mono";
-  src: url(../fonts/nectomono/NectoMono-Regular.woff2);
+  font-family: 'VictorMono', monospace;
+  src: url('../font/VictorMono.ttf') format('truetype');
+  font-style: normal;
 }
 
-@font-face {
-  font-family: "Victor Mono";
-  src: url(../fonts/victormono/WOFF2/VictorMono-Regular.woff2);
+.gallery-grid{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-left: 127.5px;
+  padding-right: 128px;
+  padding-bottom: 5%;
+}
+
+.block-gallery .gallery-caption{
+  margin-left: 123px;
 }
 
 * {
@@ -13,13 +22,46 @@
   padding: 0;
   box-sizing: border-box;
 }
+.block-image{
+  padding-bottom: 75px;
+}
+.block-text{
+  line-height: 1;
+  padding-bottom: 75px;
+}
+.block-video{
+  padding-bottom: 75px;
+}
+.audio-block{
+  padding-bottom: 75px;
+}
+.video-container{
+  margin-bottom: 25px;
+}
+.columns--1 .block-text p{
+  margin-right: 240px;
+  margin-left: 230px;
+}
 
+.columns--2 .block-quote{
+  padding-right: 140px;
+}
+
+
+
+/*
+.columns--1 .block-video{
+  height: 100vh;
+  width: 100%;
+}
+
+ */
 :root {
   --padding: 1.5rem;
   --color-black: #000;
   --color-white: #fff;
-  --color-grey: #777;
-  --color-light: #efefef;
+  --color-grey: #afafaf;
+  --color-light: #fbfbf9;
   --color-text: var(--color-black);
   --color-text-grey: var(--color-grey);
   --color-background: var(--color-white);
@@ -33,12 +75,11 @@
   --color-code-aqua:        #8abeb7;
   --color-code-blue:        #7e9abf;
   --color-code-purple:      #b294bb;
-  --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
 }
 
 html {
-  font-family: var(--font-family-sans);
+  font-family: 'VictorMono', monospace;
   color: var(--color-text);
   background: var(--color-background);
 }
@@ -54,6 +95,7 @@ body {
 }
 li {
   list-style: none;
+  margin-left: 3rem;
 }
 a {
   color: currentColor;
@@ -80,19 +122,27 @@ small {
 .color-grey {
   color: var(--color-text-grey);
 }
-
+.block-author{
+  padding-bottom: 75px; /* margin geht hier iwi nicht*/
+  margin-left: 85px;
+  font-weight: 400;
+  color: #afafaf;
+}
+.block-button{
+  margin-left: 50px;
+  margin-bottom: 25px;
+}
 .header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* margin-right: -1rem;
-  margin-left: -1rem; */
-  /* margin-bottom: 6rem; */
+  margin: 50px 0 25px 0;
 }
 
 .menu {
   display: flex;
+  margin-right: 65px;
 }
 .menu a {
   padding: 1rem;
@@ -113,7 +163,13 @@ small {
 .section {
   padding: 3rem 0;
 }
-
+.note-subheading{
+  margin-left: 85px;
+  margin-bottom: 25px;
+  line-height: normal;
+  font-weight: 600;
+  font-size: 32px;
+}
 .grid {
   --columns: 12;
   --gutter: 3rem;
@@ -134,28 +190,40 @@ small {
   grid-auto-flow: dense;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
+h1, h2 {
+  line-height: normal;
+  font-weight: 600;
+  padding-right: 50px;
+}
+
+h1{
+  padding-left: 85px;
+  margin-bottom: 25px;
+  font-size: 60px;
+  padding-top: 75px;
+}
+
+h2{
+  font-size: 32px;
+  padding-left: 85px;
+  padding-bottom: 40px;
+  padding-top: 25px;
 }
 
 .text {
+  font-size: 20px;
   line-height: 1.5em;
+  font-weight: 400;
 }
 .text a {
   text-decoration: underline;
 }
-.text :first-child {
-  margin-top: 0;
-}
-.text :last-child {
-  margin-bottom: 0;
-}
+
 .text p,
 .text ul,
 .text ol {
   margin-bottom: 1.5rem;
+  font-size: 1.25rem;
 }
 .text ul,
 .text ol {
@@ -180,14 +248,11 @@ h1, h2, h3, h4, h5, h6 {
 .text h1,
 .h1,
 .intro {
-  font-size: 2rem;
   margin-bottom: 3rem;
   line-height: 1.25em;
 }
 .text h2,
 .h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
   margin-bottom: 1.25rem;
 }
 .text h3,
@@ -198,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
 }
 .text code {
-  font-family: var(--font-family-mono);
+  font-family: 'VictorMono', monospace;
   font-size: 1em;
   background: var(--color-light);
   padding: 0 .5rem;
@@ -225,25 +290,43 @@ h1, h2, h3, h4, h5, h6 {
 .text dt {
   font-weight: 600;
 }
+
 .text blockquote {
-  font-size: 1.25rem;
-  color: grey;
+  font-size: 20px;
   line-height: 1.325em;
-  /* border-left: 2px solid var(--color-black);
-  padding-left: 1rem; */
-  margin: 3rem 0;
-  max-width: 25rem;
+  padding-left: 123px;
+  padding-right: 240px;
+  font-style: oblique;
+  padding-bottom: 25px;
+  font-weight: 700;
+}
+
+.columns--1{
+  overflow: hidden;
+}
+
+.map-description{
+  margin: 0;
+  padding-left: 85px;
+  padding-right: 240px;
+}
+
+.text blockquote p{
+  font-size: 40px;
+  line-height: 1.5em;
+  margin: 0;
 }
 .text blockquote footer {
-  font-size: .875rem;
+  font-size: 20px;
   font-style: italic;
+  margin-top: 50px;
+  color: #afafaf;
 }
-.text figure {
-  margin: 3rem 0;
-}
+
 .text figcaption {
-  padding-top: .75rem;
-  color: var(--color-text-grey);
+  margin-top: 50px;
+  margin-bottom: 75px;
+  margin-left: 85px;
 }
 .text figure ul {
   line-height: 0;
@@ -292,7 +375,6 @@ hr {
   outline: 2px solid var(--color-light);
 }
 
-.video,
 .img {
   position: relative;
   display: block;
@@ -301,6 +383,12 @@ hr {
   padding-bottom: calc(100% / var(--w) * var(--h));
   background: var(--color-black);
   margin: 3rem 0;
+}
+
+.video {
+  position: relative;
+  display: block;
+  background: var(--color-black);
 }
 .img img,
 .video iframe {
@@ -313,12 +401,15 @@ hr {
   height: 100%;
   object-fit: cover;
   border: 0;
+  margin-bottom: 50px;
 }
+
 .img[data-contain] img {
   object-fit: contain;
 }
 .img-caption,
 .video-caption {
+  margin-bottom: 50px;
   padding-top: .75rem;
   line-height: 1.5em;
   color: var(--color-text-grey);
@@ -333,6 +424,7 @@ hr {
   overflow: hidden;
   background: var(--color-black);
 }
+
 .map iframe {
   position: absolute;
   top: 0;
@@ -373,7 +465,7 @@ header > h1{
 }
 
 .textklasse{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'VictorMono', monospace;
 }
 
 .quoteklasse{
@@ -395,11 +487,6 @@ header > h1{
 #bildid{
   width: 20px;
 }
-
-
-/* .blog-prevnext{
-  border: 1px solid red;
-} */
 
 .author{
   font-family: serif;
@@ -590,10 +677,11 @@ header > h1{
 }
 
 @media screen and (min-width: 60rem) {
+  /*
   body {
     --padding: 3rem;
   }
-
+*/
   .grid {
     grid-template-columns: repeat(12, 1fr);
   }
@@ -641,14 +729,14 @@ header > h1{
 
 /* Layout-Field Styles */
 .layout {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 .columns {
   display: flex;
-  gap: 2rem;
-  align-items: flex-start; /* Ensure columns align to top */
-  width: 100%;
+  align-items: stretch;
+  height: 100%;
 }
+
 .column {
   flex: 1 1 0;
   min-height: 0; /* Allow columns to shrink */
