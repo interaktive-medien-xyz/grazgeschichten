@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'VictorMono', monospace;
-  src: url('../font/VictorMono.ttf') format('truetype');
+  src: url('../fonts/victormono/WOFF2/VictorMono-Regular.woff2') format('woff2');
   font-style: normal;
 }
 
