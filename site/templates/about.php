@@ -42,7 +42,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
       Andreas Kölmel<br>
       Tonio Vakalopoulus<br>
       Prof. Wolfgang Graz<br>
-      Prof. Günni Graz<br>
       Prof. Klaus Neuburg<br>
       Moritz Winkler</p>
   </div>
@@ -52,7 +51,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
       Andreas Kölmel<br>
       Tonio Vakalopoulus<br>
       Prof. Wolfgang Graz<br>
-      Prof. Günni Graz<br>
       Prof. Klaus Neuburg<br>
       Moritz Winkler<br>
       Prof. Günni Graz</p>
@@ -64,7 +62,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
       Andreas Kölmel<br>
       Tonio Vakalopoulus<br>
       Prof. Wolfgang Graz<br>
-      Prof. Günni Graz<br>
     </p>
   </div>
   </div>

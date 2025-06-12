@@ -6,13 +6,9 @@
   margin-bottom: 1.5rem;
 }
 
-@font-face {
-  font-family: "Necto Mono";
-  src: url(../fonts/nectomono/NectoMono-Regular.woff2);
-}
 
 @font-face {
-  font-family: "Victor Mono";
+  font-family: "VictorMono";
   src: url(../fonts/victormono/WOFF2/VictorMono-Regular.woff2);
 }
 
@@ -28,7 +24,7 @@ html{
 }
 
 p{
-  font-family: "Victor Mono";
+  font-family: "VictorMono";
   font-size: 1.25rem;
 }
 
