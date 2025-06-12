@@ -16,12 +16,22 @@ $behavior = $block->scrollBehavior()->or('smooth');
 </button>
 
 <?php if ($target): ?>
+<?php if (!isset($buttonScriptLoaded)): ?>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const buttons = document.querySelectorAll('[data-scroll-target]');
+// Prevent multiple script execution
+if (!window.buttonInitialized) {
+  window.buttonInitialized = true;
   
-  buttons.forEach(button => {
-    button.addEventListener('click', function(e) {
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('[data-scroll-target]');
+    
+    buttons.forEach(button => {
+      // Remove any existing event listeners to prevent duplicates
+      button.removeEventListener('click', handleButtonClick);
+      button.addEventListener('click', handleButtonClick);
+    });
+    
+    function handleButtonClick(e) {
       e.preventDefault();
       
       const target = this.dataset.scrollTarget;
@@ -37,10 +47,14 @@ document.addEventListener('DOMContentLoaded', function() {
           behavior: behavior
         });
       }
-    });
+    }
   });
-});
+}
 </script>
+<?php 
+  $buttonScriptLoaded = true;
+endif; 
+?>
 
 <style>
 .block-button {

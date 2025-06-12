@@ -131,71 +131,84 @@ if ($block->blockClass()->isNotEmpty()) {
 }
 </style>
 
+<?php if (!isset($mapScriptLoaded)): ?>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const map = document.getElementById('<?= $mapId ?>');
-  if (!map) return;
+// Prevent multiple script execution
+if (!window.mapInitialized) {
+  window.mapInitialized = true;
   
-  const container = map.querySelector('.map-container');
-  let isDragging = false;
-  let startX, startY, scrollLeft, scrollTop;
-
-  // Drag-Funktionalität
-  container.addEventListener('mousedown', function(e) {
-    isDragging = true;
-    container.style.cursor = 'grabbing';
+  document.addEventListener('DOMContentLoaded', function() {
+    const maps = document.querySelectorAll('.block-map');
     
-    startX = e.pageX - container.offsetLeft;
-    startY = e.pageY - container.offsetTop;
-    scrollLeft = container.parentElement.scrollLeft;
-    scrollTop = container.parentElement.scrollTop;
-  });
+    maps.forEach(function(map) {
+      const container = map.querySelector('.map-container');
+      if (!container) return;
+      
+      let isDragging = false;
+      let startX, startY, scrollLeft, scrollTop;
 
-  container.addEventListener('mouseleave', function() {
-    isDragging = false;
-    container.style.cursor = 'grab';
-  });
+      // Drag-Funktionalität
+      container.addEventListener('mousedown', function(e) {
+        isDragging = true;
+        container.style.cursor = 'grabbing';
+        
+        startX = e.pageX - container.offsetLeft;
+        startY = e.pageY - container.offsetTop;
+        scrollLeft = container.parentElement.scrollLeft;
+        scrollTop = container.parentElement.scrollTop;
+      });
 
-  container.addEventListener('mouseup', function() {
-    isDragging = false;
-    container.style.cursor = 'grab';
-  });
+      container.addEventListener('mouseleave', function() {
+        isDragging = false;
+        container.style.cursor = 'grab';
+      });
 
-  container.addEventListener('mousemove', function(e) {
-    if (!isDragging) return;
+      container.addEventListener('mouseup', function() {
+        isDragging = false;
+        container.style.cursor = 'grab';
+      });
 
-    e.preventDefault();
-    const x = e.pageX - container.offsetLeft;
-    const y = e.pageY - container.offsetTop;
-    const moveX = x - startX;
-    const moveY = y - startY;
+      container.addEventListener('mousemove', function(e) {
+        if (!isDragging) return;
 
-    container.parentElement.scrollLeft = scrollLeft - moveX;
-    container.parentElement.scrollTop = scrollTop - moveY;
-  });
+        e.preventDefault();
+        const x = e.pageX - container.offsetLeft;
+        const y = e.pageY - container.offsetTop;
+        const moveX = x - startX;
+        const moveY = y - startY;
 
-  // Interaktive Elemente
-  map.querySelectorAll('[data-interactive]').forEach(element => {
-    element.addEventListener('click', function(e) {
-      if (!isDragging) {
-        const action = this.getAttribute('data-action');
-        if (action) {
-          console.log('Aktion ausgelöst:', action);
-        }
-      }
+        container.parentElement.scrollLeft = scrollLeft - moveX;
+        container.parentElement.scrollTop = scrollTop - moveY;
+      });
+
+      // Interaktive Elemente
+      map.querySelectorAll('[data-interactive]').forEach(element => {
+        element.addEventListener('click', function(e) {
+          if (!isDragging) {
+            const action = this.getAttribute('data-action');
+            if (action) {
+              console.log('Aktion ausgelöst:', action);
+            }
+          }
+        });
+      });
+      
+      // Zoom-Funktionalität mit Mausrad
+      container.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        
+        const svg = container.querySelector('svg');
+        const scale = svg.style.transform ? parseFloat(svg.style.transform.replace('scale(', '')) : 1;
+        const delta = e.deltaY > 0 ? 0.9 : 1.1;
+        const newScale = Math.min(Math.max(scale * delta, 0.5), 3);
+        
+        svg.style.transform = `scale(${newScale})`;
+      });
     });
   });
-  
-  // Zoom-Funktionalität mit Mausrad
-  container.addEventListener('wheel', function(e) {
-    e.preventDefault();
-    
-    const svg = container.querySelector('svg');
-    const scale = svg.style.transform ? parseFloat(svg.style.transform.replace('scale(', '')) : 1;
-    const delta = e.deltaY > 0 ? 0.9 : 1.1;
-    const newScale = Math.min(Math.max(scale * delta, 0.5), 3);
-    
-    svg.style.transform = `scale(${newScale})`;
-  });
-});
-</script> 
+}
+</script>
+<?php 
+  $mapScriptLoaded = true;
+endif; 
+?> 

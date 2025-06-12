@@ -1,7 +1,12 @@
-@font-face {
+/*@font-face {
   font-family: 'VictorMono', monospace;
   src: url('../fonts/victormono/WOFF2/VictorMono-Regular.woff2') format('woff2');
   font-style: normal;
+}*/
+
+@font-face {
+  font-family: "VictorMono";
+  src: url(../fonts/victormono/WOFF2/VictorMono-Regular.woff2);
 }
 
 .gallery-grid{
@@ -201,6 +206,7 @@ h1{
   margin-bottom: 25px;
   font-size: 60px;
   padding-top: 75px;
+  font-weight: lighter;
 }
 
 h2{
@@ -208,6 +214,7 @@ h2{
   padding-left: 85px;
   padding-bottom: 40px;
   padding-top: 25px;
+  font-weight: lighter;
 }
 
 .text {
@@ -224,6 +231,7 @@ h2{
 .text ol {
   margin-bottom: 1.5rem;
   font-size: 1.25rem;
+  line-height: 150%;
 }
 .text ul,
 .text ol {
@@ -296,7 +304,6 @@ h2{
   line-height: 1.325em;
   padding-left: 123px;
   padding-right: 240px;
-  font-style: oblique;
   padding-bottom: 25px;
   font-weight: 700;
 }
@@ -522,13 +529,13 @@ header > h1{
 .home-hero > h1{
   font-size: 6vw;
   padding: 1rem;
-  font-family: Victor Mono;
+  font-family: VictorMono;
 }
 
 .home-header{
   font-size: 4vw;
   padding: 1rem;
-  font-family: Victor Mono;
+  font-family: VictorMono;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -539,7 +546,7 @@ header > h1{
 
 .home-info{
   background-color: rgba(104, 143, 119, 1);
-  font-family: Victor Mono;
+  font-family: VictorMono;
   width: 100vw;
   height: 100%;
   padding: 2rem;
@@ -576,25 +583,27 @@ header > h1{
   font-size: 3rem;
   margin: 2rem;
   margin-top: 4rem;
-  font-family: Victor Mono;
+  font-family: VictorMono;
 }
 
 .logo{
   margin-top: -1rem;
-  font-weight: lighter;
+  font-weight: lighter !important;
   display: flex;
   align-items: center;
 }
 
 .logo-graz{
+  padding: 0 !important;
   z-index: 6;
   color: rgba(239, 63, 83, 1);
-  padding-bottom: 1rem;
+  padding-bottom: 1rem !important;
 }
 
 .logo-geschichten{
+  padding: 0 !important;
   position: absolute;
-  padding-left: 1rem;
+  padding-left: 1rem !important;
   z-index: 5;
   color: rgba(203, 213, 205, 1);
 }
@@ -610,12 +619,12 @@ header > h1{
 .footer-about-wrapper > h1 {
   font-size: 1rem;
   color: white;
-  font-family: Victor Mono;
+  font-family: VictorMono;
   margin-bottom: 10px;
 }
 
 .footer-about{
-  font-family: Victor Mono;
+  font-family: VictorMono;
   color: rgb(180, 180, 180);
   width: 40vw;
 }
@@ -627,7 +636,7 @@ header > h1{
 .footer-partner > h1{
   font-size: 1rem;
   color: white;
-  font-family: Victor Mono;
+  font-family: VictorMono;
   margin-bottom: 10px;
 }
 
@@ -648,14 +657,14 @@ header > h1{
 .footer-nav > h1 {
   font-size: 1rem;
   color: white;
-  font-family: Victor Mono;
+  font-family: VictorMono;
   margin-bottom: 10px;
 }
 
 .footer-nav > a {
   font-size: 1rem;
   color: rgb(180, 180, 180);
-  font-family: Victor Mono;
+  font-family: VictorMono;
 }
 
 .footer-nav > a:hover{
@@ -938,7 +947,7 @@ header > h1{
   font-size: 1.5rem;
   transition: opacity 0.3s ease;
   z-index: 2;
-  font-family: Victor Mono;
+  font-family: VictorMono;
 }
 
 .home .note-cover {
@@ -1110,7 +1119,7 @@ header > h1{
   justify-content: center;
   transition: background-color 0.3s ease;
   pointer-events: auto;
-  font-family: Victor Mono;
+  font-family: VictorMono;
 }
 
 .image-slider-prev:hover,

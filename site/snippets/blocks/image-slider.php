@@ -40,63 +40,73 @@ $imageCount = $images->count();
   <?php endif ?>
 </div>
 
+<?php if (!isset($imageSliderScriptLoaded)): ?>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const sliders = document.querySelectorAll('.block-image-slider');
+// Prevent multiple script execution
+if (!window.imageSliderInitialized) {
+  window.imageSliderInitialized = true;
   
-  sliders.forEach(function(slider) {
-    const container = slider.querySelector('.image-slider-container');
-    const slides = slider.querySelectorAll('.image-slide');
-    const prevBtn = slider.querySelector('.image-slider-prev');
-    const nextBtn = slider.querySelector('.image-slider-next');
-    const dots = slider.querySelectorAll('.image-slider-dot');
+  document.addEventListener('DOMContentLoaded', function() {
+    const sliders = document.querySelectorAll('.block-image-slider');
     
-    let currentSlide = 0;
-    const totalSlides = slides.length;
-    
-    function showSlide(index) {
-      // Hide all slides
-      slides.forEach(slide => {
-        slide.classList.remove('active');
-        slide.style.visibility = 'hidden';
-        slide.style.opacity = '0';
-      });
-      dots.forEach(dot => dot.classList.remove('active'));
+    sliders.forEach(function(slider) {
+      const container = slider.querySelector('.image-slider-container');
+      const slides = slider.querySelectorAll('.image-slide');
+      const prevBtn = slider.querySelector('.image-slider-prev');
+      const nextBtn = slider.querySelector('.image-slider-next');
+      const dots = slider.querySelectorAll('.image-slider-dot');
       
-      // Show current slide
-      slides[index].classList.add('active');
-      slides[index].style.visibility = 'visible';
-      slides[index].style.opacity = '1';
-      dots[index].classList.add('active');
+      let currentSlide = 0;
+      const totalSlides = slides.length;
       
-      currentSlide = index;
-    }
-    
-    function nextSlide() {
-      const next = (currentSlide + 1) % totalSlides;
-      showSlide(next);
-    }
-    
-    function prevSlide() {
-      const prev = (currentSlide - 1 + totalSlides) % totalSlides;
-      showSlide(prev);
-    }
-    
-    // Initialize first slide immediately
-    if (slides.length > 0) {
-      showSlide(0);
-    }
-    
-    // Event listeners
-    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-    
-    dots.forEach(function(dot, index) {
-      dot.addEventListener('click', function() {
-        showSlide(index);
+      function showSlide(index) {
+        // Hide all slides
+        slides.forEach(slide => {
+          slide.classList.remove('active');
+          slide.style.visibility = 'hidden';
+          slide.style.opacity = '0';
+        });
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        // Show current slide
+        slides[index].classList.add('active');
+        slides[index].style.visibility = 'visible';
+        slides[index].style.opacity = '1';
+        dots[index].classList.add('active');
+        
+        currentSlide = index;
+      }
+      
+      function nextSlide() {
+        const next = (currentSlide + 1) % totalSlides;
+        showSlide(next);
+      }
+      
+      function prevSlide() {
+        const prev = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(prev);
+      }
+      
+      // Initialize first slide immediately
+      if (slides.length > 0) {
+        showSlide(0);
+      }
+      
+      // Event listeners
+      if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+      if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+      
+      dots.forEach(function(dot, index) {
+        dot.addEventListener('click', function() {
+          showSlide(index);
+        });
       });
     });
   });
-});
+}
 </script>
+<?php 
+  $imageSliderScriptLoaded = true;
+endif; 
+?>
 <?php endif ?> 

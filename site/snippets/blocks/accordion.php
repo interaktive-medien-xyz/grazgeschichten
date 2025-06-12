@@ -25,34 +25,50 @@ $items = $block->items()->toStructure();
   <?php endforeach ?>
 </div>
 
+<?php if (!isset($accordionScriptLoaded)): ?>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const accordions = document.querySelectorAll('.block-accordion');
+// Prevent multiple script execution
+if (!window.accordionInitialized) {
+  window.accordionInitialized = true;
   
-  accordions.forEach(accordion => {
-    const headers = accordion.querySelectorAll('.accordion-header');
+  document.addEventListener('DOMContentLoaded', function() {
+    const accordions = document.querySelectorAll('.block-accordion');
     
-    headers.forEach(header => {
-      header.addEventListener('click', () => {
-        const isExpanded = header.getAttribute('aria-expanded') === 'true';
-        const content = header.nextElementSibling;
-        
-        // Toggle current item
-        header.setAttribute('aria-expanded', !isExpanded);
-        content.style.maxHeight = isExpanded ? null : content.scrollHeight + 'px';
-        
-        // Optional: Close other items
-        // headers.forEach(otherHeader => {
-        //   if (otherHeader !== header) {
-        //     otherHeader.setAttribute('aria-expanded', 'false');
-        //     otherHeader.nextElementSibling.style.maxHeight = null;
-        //   }
-        // });
+    accordions.forEach(accordion => {
+      const headers = accordion.querySelectorAll('.accordion-header');
+      
+      headers.forEach(header => {
+        // Remove any existing event listeners to prevent duplicates
+        header.removeEventListener('click', handleAccordionClick);
+        header.addEventListener('click', handleAccordionClick);
       });
     });
+    
+    function handleAccordionClick() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      const content = this.nextElementSibling;
+      
+      // Toggle current item
+      this.setAttribute('aria-expanded', !isExpanded);
+      content.style.maxHeight = isExpanded ? null : content.scrollHeight + 'px';
+      
+      // Optional: Close other items in the same accordion
+      // const parentAccordion = this.closest('.block-accordion');
+      // const otherHeaders = parentAccordion.querySelectorAll('.accordion-header');
+      // otherHeaders.forEach(otherHeader => {
+      //   if (otherHeader !== this) {
+      //     otherHeader.setAttribute('aria-expanded', 'false');
+      //     otherHeader.nextElementSibling.style.maxHeight = null;
+      //   }
+      // });
+    }
   });
-});
+}
 </script>
+<?php 
+  $accordionScriptLoaded = true;
+endif; 
+?>
 
 <style>
 .block-accordion {
