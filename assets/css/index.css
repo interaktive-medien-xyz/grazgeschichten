@@ -15,6 +15,12 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: "VictorMono";
+  src: url(../fonts/victormono/WOFF2/VictorMono-SemiBold.woff2);
+  font-weight: 600;
+}
+
 .gallery-grid{
   display: flex;
   flex-direction: row;
