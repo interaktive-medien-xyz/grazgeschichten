@@ -147,8 +147,10 @@ small {
   color: #afafaf;
 }
 .block-button{
-  margin-left: 50px;
   margin-bottom: 25px;
+  width: 50% !important;
+  margin-left: 25%;
+  word-wrap: break-word;
 }
 .header {
   position: relative;
@@ -343,9 +345,9 @@ h2{
 }
 
 .text figcaption {
-  margin-top: 50px;
   margin-bottom: 75px;
-  margin-left: 85px;
+  text-align: left;
+  padding-left: 10%;
 }
 .text figure ul {
   line-height: 0;
@@ -431,8 +433,7 @@ hr {
   margin-bottom: 50px;
   padding-top: .75rem;
   line-height: 1.5em;
-  color: var(--color-text-grey);
-  text-align: center;
+  color: var(--color-text-grey);  
 }
 
 .map {
@@ -1404,10 +1405,8 @@ header > h1{
 }
 
 .block-video .video-caption {
-  padding-top: 0.75rem;
   line-height: 1.5em;
   color: var(--color-text-grey);
-  text-align: center;
 }
 
 /* Responsive adjustments for video and iframe blocks */
