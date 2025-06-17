@@ -24,9 +24,65 @@ $controls = $block->controls()->isTrue();
   <div class="video-container">
     <?php 
     if (strpos($url, 'youtube.com') !== false || strpos($url, 'youtu.be') !== false) {
-        echo kirby()->kirbytags('(video: ' . $url . ' autoplay: ' . ($autoplay ? 'true' : 'false') . ' controls: ' . ($controls ? 'true' : 'false') . ')');
+        // Extract YouTube video ID
+        $videoId = null;
+        if (preg_match('/youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)/', $url, $matches)) {
+            $videoId = $matches[1];
+        } elseif (preg_match('/youtu\.be\/([a-zA-Z0-9_-]+)/', $url, $matches)) {
+            $videoId = $matches[1];
+        }
+        
+        if ($videoId) {
+            // Build YouTube embed URL with parameters
+            $embedUrl = 'https://www.youtube.com/embed/' . $videoId;
+            $params = [];
+            
+            if ($autoplay) {
+                $params[] = 'autoplay=1';
+                $params[] = 'mute=1'; // Required for autoplay
+            }
+            
+            if (!$controls) {
+                $params[] = 'controls=0';
+            }
+            
+            if (!empty($params)) {
+                $embedUrl .= '?' . implode('&', $params);
+            }
+            
+            // Generate iframe with proper allow attribute
+            $allowAttr = $autoplay ? 'autoplay; encrypted-media; picture-in-picture' : 'encrypted-media; picture-in-picture';
+            echo '<iframe src="' . $embedUrl . '" allow="' . $allowAttr . '" allowfullscreen></iframe>';
+        }
     } elseif (strpos($url, 'vimeo.com') !== false) {
-        echo kirby()->kirbytags('(video: ' . $url . ' autoplay: ' . ($autoplay ? 'true' : 'false') . ' controls: ' . ($controls ? 'true' : 'false') . ')');
+        // Extract Vimeo video ID
+        $videoId = null;
+        if (preg_match('/vimeo\.com\/([0-9]+)/', $url, $matches)) {
+            $videoId = $matches[1];
+        }
+        
+        if ($videoId) {
+            // Build Vimeo embed URL with parameters
+            $embedUrl = 'https://player.vimeo.com/video/' . $videoId;
+            $params = [];
+            
+            if ($autoplay) {
+                $params[] = 'autoplay=1';
+                $params[] = 'muted=1'; // Required for autoplay
+            }
+            
+            if (!$controls) {
+                $params[] = 'controls=0';
+            }
+            
+            if (!empty($params)) {
+                $embedUrl .= '?' . implode('&', $params);
+            }
+            
+            // Generate iframe with proper allow attribute
+            $allowAttr = $autoplay ? 'autoplay; fullscreen; picture-in-picture' : 'fullscreen; picture-in-picture';
+            echo '<iframe src="' . $embedUrl . '" allow="' . $allowAttr . '" allowfullscreen></iframe>';
+        }
     }
     ?>
   </div>

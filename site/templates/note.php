@@ -31,8 +31,18 @@
 <?php endif ?>
 
 <?php if ($cover = $page->cover()): ?>
+  <?php 
+  // Check if the cover image is a GIF
+  $isGif = strtolower($cover->extension()) === 'gif';
+  ?>
   <a href="<?= $cover->url() ?>" data-lightbox class="img hero" style="--w:2; --h:1">
-    <img src="<?= $cover->crop(1200, 600)->url() ?>" alt="<?= $cover->alt()->esc() ?>">
+    <?php if ($isGif): ?>
+      <!-- For GIFs, use the original file to preserve animation -->
+      <img src="<?= $cover->url() ?>" alt="<?= $cover->alt()->esc() ?>">
+    <?php else: ?>
+      <!-- For static images, use the cropped version -->
+      <img src="<?= $cover->crop(1200, 600)->url() ?>" alt="<?= $cover->alt()->esc() ?>">
+    <?php endif ?>
   </a>
 <?php endif ?>
 
