@@ -200,7 +200,7 @@ trait AppErrors
 			);
 
 			if ($isLogged !== false) {
-				error_log($exception);
+				\error_log((string)$exception);
 			}
 
 			return Handler::DONE;
