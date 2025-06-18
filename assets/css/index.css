@@ -403,7 +403,7 @@ hr {
   --h: 0.56;
   padding-bottom: calc(100% / var(--w) * var(--h));
   background: var(--color-black);
-  margin: 3rem 0;
+  margin-top: 3rem;
 }
 
 .video {
@@ -1206,6 +1206,7 @@ header > h1{
   /* Ensure the slider is contained within its parent */
   overflow: hidden;
   position: relative;
+  margin-bottom: 4rem !important;
 }
 
 .scroll-slider-container {
