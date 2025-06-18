@@ -1,5 +1,5 @@
 .Hintergrund-weiß{
-  background-color: #FBFBF9;
+  background-color: #ffffff;
   color: #2C372F;
   height: 100%;
   overflow-wrap: break-word;
@@ -7,19 +7,19 @@
 }
 
 .Hintergrund-weiß audio{
-  background-color: #FBFBF9;
+  background-color: #ffffff;
   color: #2C372F;
   margin: 25px 0 0 0;
 }
 
 .Hintergrund-weiß img{
-  background-color: #FBFBF9;
+  background-color: #ffffff;
   color: #2C372F;
   padding: 0 20px 0 20px;
 }
 
 .Hintergrund-weiß p{
-  background-color: #FBFBF9;
+  background-color: #ffffff;
   color: #2C372F;
   padding: 0 5% 0 5%;
 }

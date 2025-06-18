@@ -14,6 +14,10 @@ fields:
     type: toggle
     label: Autoplay
     default: false
+  loop:
+    type: toggle
+    label: Loop
+    default: false
   controls:
     type: toggle
     label: Controls

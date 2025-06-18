@@ -16,6 +16,7 @@
 $url = $block->url();
 $caption = $block->caption();
 $autoplay = $block->autoplay()->isTrue();
+$loop = $block->loop()->isTrue();
 $controls = $block->controls()->isTrue();
 ?>
 
@@ -40,6 +41,12 @@ $controls = $block->controls()->isTrue();
             if ($autoplay) {
                 $params[] = 'autoplay=1';
                 $params[] = 'mute=1'; // Required for autoplay
+            }
+            
+            if ($loop) {
+                $params[] = 'loop=1';
+                $params[] = 'playlist=' . $videoId; // Required for loop to work
+                $params[] = 'rel=0'; // Hide related videos
             }
             
             if (!$controls) {
@@ -69,6 +76,10 @@ $controls = $block->controls()->isTrue();
             if ($autoplay) {
                 $params[] = 'autoplay=1';
                 $params[] = 'muted=1'; // Required for autoplay
+            }
+            
+            if ($loop) {
+                $params[] = 'loop=1';
             }
             
             if (!$controls) {
